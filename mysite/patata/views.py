@@ -7,3 +7,6 @@ def index(request):
 
 def home(request):
     return render(request, 'static/index.html', {})
+
+def contact(request):
+    return render(request, 'static/contact.html', {})
