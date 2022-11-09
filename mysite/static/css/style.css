@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #6c757d;
   text-align: left;
-  background-color: #f2f2f2;
+  background-color: #2e2e2e;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #343a40;
+  color: #cdcdcd;
 }
 
 h1, .h1 {
@@ -6154,7 +6154,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #ffffff !important;
+  background-color: #262626 !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9272,7 +9272,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #84919d !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9483,7 +9483,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link {
   padding: 15px;
-  color: #6c757d;
+  color: #ffffff;
   font-weight: 400;
   outline: none;
 }
