@@ -12,6 +12,7 @@ def index(request):
 def home(request):
     vars = {
         'plataformas' : Plataforma.objects.all()[0:4],
+        'featureds': Videojuego.objects.all()[0:8]
     }
     return render(request, 'static/index.html', vars)
 
