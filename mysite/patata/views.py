@@ -12,7 +12,8 @@ def index(request):
 def home(request):
     vars = {
         'plataformas' : Plataforma.objects.all()[0:4],
-        'featureds': Videojuego.objects.all()[0:8]
+        'featureds': Videojuego.objects.all()[0:8],
+        'sections' : [Videojuego.objects.filter(genero=i) for i in Genero.objects.all()]
     }
     return render(request, 'static/index.html', vars)
 
