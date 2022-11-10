@@ -17,3 +17,25 @@ def home(request):
 
 def contact(request):
     return render(request, 'static/contact.html', {})
+
+
+def games(request):
+    output = ""
+    for e in Videojuego.objects.all():
+        plataformas = ""
+        for i in e.plataforma.all():
+            plataformas+=f"{i.nombre}"
+        output += f"{e.nombre},{e.fecha_salida},{e.pegi},{e.comanya},{e.url_v},{e.genero.nombre},{plataformas}\n"  
+    return HttpResponse(output)
+
+def gender(request):
+    output = ""
+    for e in Genero.objects.all():
+        output+= f"{e.nombre}\n"
+    return HttpResponse(output)
+
+def platform(request):
+    output = ""
+    for e in Plataforma.objects.all():
+        output+= f"{e.nombre},{e.owner},{e.url_p}\n"
+    return HttpResponse(output)
