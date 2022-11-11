@@ -15,10 +15,10 @@ def home(request):
         'featureds': Videojuego.objects.all()[0:8],
         'sections' : [Videojuego.objects.filter(genero=i) for i in Genero.objects.all()]
     }
-    return render(request, 'static/index.html', vars)
+    return render(request, 'index.html', vars)
 
 def contact(request):
-    return render(request, 'static/contact.html', {})
+    return render(request, 'contact.html', {})
 
 
 def games(request):
