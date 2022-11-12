@@ -26,7 +26,7 @@ def games(request):
     for e in Videojuego.objects.all():
         plataformas = ""
         for i in e.plataforma.all():
-            plataformas+=f"{i.nombre}"
+            plataformas+=f"{i.nombre}, "
         output += f"<tr><td>{e.nombre}</td><td>{e.fecha_salida}</td><td>{e.pegi}</td><td>{e.comanya}</td><td>{e.url_v}</td><td>{e.genero.nombre}</td><td>{plataformas}</td></tr>"
     return HttpResponse(output + "</table>")
 
