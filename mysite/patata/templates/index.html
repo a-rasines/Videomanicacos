@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>NEWSROOM - Free Bootstrap Magazine Template</title>
+    <title>VideoManicacos - Free Videogames News Website</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
     {% load static %}
-    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+    <link href="{% static 'img/logoweb.png' %}" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +30,9 @@
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid">
+        <!--
         <div class="row align-items-center bg-light px-lg-5">
+            
             <div class="col-12 col-md-8">
                 <div class="d-flex justify-content-between">
                     <div class="bg-primary text-white text-center py-2" style="width: 100px;">Tranding</div>
@@ -39,20 +41,27 @@
                         <div class="text-truncate"><a class="text-secondary" href="">Gubergren elitr amet eirmod et lorem diam elitr, ut est erat Gubergren elitr amet eirmod et lorem diam elitr, ut est erat</a></div>
                     </div>
                 </div>
+                
             </div>
+            <time class="col-md-4 text-right d-none d-md-block">
+                Monday, January 01, 2045
+            </time>
+            
             <div class="col-md-4 text-right d-none d-md-block">
                 Monday, January 01, 2045
             </div>
+        
         </div>
+        -->
         <div class="row align-items-center py-2 px-lg-5">
             <div class="col-lg-4">
                 <a href="" class="navbar-brand d-none d-lg-block">
-                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                    <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Video</span>MAnicacos</h1>
                 </a>
             </div>
             <div class="col-lg-8 text-center text-lg-right">
                 {% load static %}
-                <img class="img-fluid" src="{% static 'img/ads-700x70.jpg' %}" alt="">
+                <img class="img-fluid" src="{% static 'img/disney_plus.jpg' %}" alt="" style="object-fit: cover;max-height:70px; min-width:700px;overflow:hidden">
             </div>
         </div>
     </div>
@@ -84,7 +93,7 @@
                     <a href="/contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control" placeholder="Keyword">
+                    <input type="text" class="form-control" placeholder="Buscar...">
                     <div class="input-group-append">
                         <button class="input-group-text text-secondary"><i
                                 class="fa fa-search"></i></button>
@@ -97,6 +106,7 @@
 
 
     <!-- Top News Slider Start -->
+    <!--
     <div class="container-fluid py-3">
         <div class="container">
             <div class="owl-carousel owl-carousel-2 carousel-item-3 position-relative">
@@ -131,6 +141,7 @@
             </div>
         </div>
     </div>
+    -->
     <!-- Top News Slider End -->
 
 
@@ -168,7 +179,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">Categories</h3>
+                        <h3 class="m-0">Plataformas</h3>
                         <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                     </div>
                     {% for plataforma in plataformas %}
@@ -251,6 +262,7 @@
     <!-- Category News Slider End -->
 
     <!-- News With Sidebar Start -->
+<!--
     <div class="container-fluid py-3">
         <div class="container">
             <div class="row">
@@ -434,9 +446,12 @@
                         </div>
                     </div>
                 </div>
-                
+--> 
+<!--
                 <div class="col-lg-4 pt-3 pt-lg-0">
+-->
                     <!-- Social Follow Start -->
+<!--
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Follow Us</h3>
@@ -466,9 +481,11 @@
                             </a>
                         </div>
                     </div>
+-->
                     <!-- Social Follow End -->
 
                     <!-- Newsletter Start -->
+<!--
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Newsletter</h3>
@@ -484,16 +501,20 @@
                             <small>Sit eirmod nonumy kasd eirmod</small>
                         </div>
                     </div>
+-->
                     <!-- Newsletter End -->
 
                     <!-- Ads Start -->
+<!--
                     <div class="mb-3 pb-3">
                         {% load static %}
                         <a href=""><img class="img-fluid" src="{% static 'img/news-500x280-4.jpg' %}" alt=""></a>
                     </div>
+-->
                     <!-- Ads End -->
 
                     <!-- Popular News Start -->
+<!--
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Tranding</h3>
@@ -559,9 +580,11 @@
                             </div>
                         </div>
                     </div>
+-->
                     <!-- Popular News End -->
 
                     <!-- Tags Start -->
+<!--
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Tags</h3>
@@ -581,12 +604,15 @@
                             <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
                         </div>
                     </div>
+-->
                     <!-- Tags End -->
+<!--
                 </div>
             </div>
         </div>
     </div>
     </div>
+-->
     <!-- News With Sidebar End -->
 
 
@@ -596,9 +622,12 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 {% load static %}
                 <a href="{% static 'index.html' %}" class="navbar-brand">
-                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">News</span>Room</h1>
+                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">Video</span>Manicacos</h1>
                 </a>
+                <br><br><br><br>
+                <!--
                 <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                -->
                 <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -608,41 +637,23 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Categories</h4>
+                <h4 class="font-weight-bold mb-4">Platformas</h4>
                 <div class="d-flex flex-wrap m-n1">
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    {% for plat in todasPlataformas %}
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Tags</h4>
+                <h4 class="font-weight-bold mb-4">Generos</h4>
                 <div class="d-flex flex-wrap m-n1">
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    {% for gend in genders %}
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">{{gend.nombre}}</a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Quick Links</h4>
+                <h4 class="font-weight-bold mb-4">Enlaces Rápidos</h4>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
                     <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>

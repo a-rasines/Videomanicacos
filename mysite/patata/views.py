@@ -12,6 +12,8 @@ def index(request):
 def home(request):
     vars = {
         'plataformas' : Plataforma.objects.all()[0:4],
+        'todasPlataformas' : Plataforma.objects.all(),
+        'genders' : Genero.objects.all(),
         'featureds': Videojuego.objects.all()[0:8],
         'sections' : [Videojuego.objects.filter(genero=i) for i in Genero.objects.all()]
     }
