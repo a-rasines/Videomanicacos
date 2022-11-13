@@ -14,7 +14,8 @@ def home(request):
         'plataformas' : Plataforma.objects.all()[0:4],
         'todasPlataformas' : Plataforma.objects.all(),
         'genders' : Genero.objects.all(),
-        'featureds': Videojuego.objects.all()[0:8],
+        'featureds' : Videojuego.objects.filter(featured=True),
+        'lastests': Videojuego.objects.all()[::-1][0:8],
         'sections' : [Videojuego.objects.filter(genero=i) for i in Genero.objects.all()]
     }
     return render(request, 'index.html', vars)

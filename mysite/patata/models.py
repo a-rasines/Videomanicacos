@@ -17,7 +17,9 @@ class Videojuego(models.Model):
     fecha_salida = models.IntegerField()
     pegi = models.IntegerField()
     comanya = models.CharField(max_length=50)
-    url_v = models.TextField(default = "")
+    url_v = models.URLField(default = "")
+    featured = models.BooleanField(default=False)
+    description = models.TextField(default="")
 
     genero = models.ForeignKey(Genero, on_delete=models.CASCADE)
     plataforma = models.ManyToManyField(Plataforma)
