@@ -242,7 +242,7 @@
                         {% endfor %}
                     </div>
                 </div>
-            {% if not forloop.counter0|divisibleby:2 %}
+            {% if not forloop.counter0|divisibleby:2 or sections|length == forloop.counter0|add:1%}
             </div>
         </div>
     </div>
