@@ -18,6 +18,7 @@ class Videojuego(models.Model):
     pegi = models.IntegerField()
     comanya = models.CharField(max_length=50)
     url_v = models.URLField(default = "")
+    url_banner = models.URLField(default="")
     featured = models.BooleanField(default=False)
     description = models.TextField(default="")
 

@@ -79,18 +79,23 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="/genres" class="nav-item nav-link">Generos</a>
-                    <a href="/games" class="nav-item nav-link">Juegos</a>
-                    <a href="/platform" class="nav-item nav-link">Plataformas</a>
-                    <!--<div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Generos</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="#" class="dropdown-item">Menu item 1</a>
-                            <a href="#" class="dropdown-item">Menu item 2</a>
-                            <a href="#" class="dropdown-item">Menu item 3</a>
+                            {%for v in genders%}
+                                <a href="/genre/{{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
+                            {% endfor %}
                         </div>
-                    </div>-->
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plataformas</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            {%for v in todasPlataformas%}
+                                <a href="/platform/{{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
@@ -158,11 +163,11 @@
                             <img class="img-fluid h-100" alt=""  src="{{featured.url_v}}" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-1">
-                                    <a class="text-white" href="">{{featured.genero}}</a>
+                                    <a class="text-white" href="/genre/{{featured.genero}}">{{featured.genero}}</a>
                                     <span class="px-2 text-white">/</span>
                                     <a class="text-white" href="">{{featured.fecha_salida}}</a>
                                 </div>
-                                <a class="h2 m-0 text-white font-weight-bold" href="">{{featured.nombre}}</a>
+                                <a class="h2 m-0 text-white font-weight-bold" href="/game/{{featured.id}}">{{featured.nombre}}</a>
                             </div>
                         </div>
                         {% endfor %}
@@ -174,9 +179,9 @@
                         <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
                     </div>
                     {% for plataforma in plataformas %}
-	                    	<div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                    <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                         <img class="img-fluid w-100 h-100" alt="{{plataforma.nombre}}" src={{plataforma.url_p}} style="object-fit: cover;">
-                        <a href="" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        <a href="/platform/{{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                             {{plataforma.nombre}}
                         </a>
                     </div>
@@ -201,11 +206,11 @@
                     <img class="img-fluid w-100 h-100" alt="{{featured.nombre}}" src="{{featured.url_v}}" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-1" style="font-size: 13px;">
-                            <a class="text-white" href="">{{featured.genero}}</a>
+                            <a class="text-white" href="/genre/{{featured.genero}}">{{featured.genero}}</a>
                             <span class="px-1 text-white">/</span>
                             <a class="text-white" href="">{{featured.fecha_salida}}</a>
                         </div>
-                        <a class="h4 m-0 text-white" href="">{{featured.nombre}}</a>
+                        <a class="h4 m-0 text-white" href="/game/{{featured.id}}">{{featured.nombre}}</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -216,7 +221,7 @@
 
 
     <!-- Category News Slider Start -->
-    {% for section in sections %}
+    {% for section, games in sections.items %}
     {%if forloop.counter0|divisibleby:2 %}
     <div class="container-fluid">
         <div class="container">
@@ -224,19 +229,19 @@
             {%endif%}
                 <div class="col-lg-6 py-3">
                     <div class="bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">{{section.0.genero}}</h3>
+                        <h3 class="m-0">{{section}}</h3>
                     </div>
                     <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
-                        {% for juego in section %}
+                        {% for juego in games %}
                         <div class="position-relative">
                             <img class="img-fluid w-100" alt="{{juego.nombre}}" src="{{juego.url_v}}" style="object-fit: cover;max-height:250px; overflow:hidden">
                             <div class="overlay position-relative bg-light">
                                 <div class="mb-2" style="font-size: 13px;">
-                                    <a href="">{{juego.genero}}</a>
+                                    <a href="/genre/{{juego.genero}}">{{juego.genero}}</a>
                                     <span class="px-1">/</span>
                                     <span>{{juego.fecha_salida}}</span>
                                 </div>
-                                <a class="h4 m-0" href="">{{juego.nombre}}</a>
+                                <a class="h4 m-0" href="/game/{{juego.id}}">{{juego.nombre}}</a>
                             </div>
                         </div>
                         {% endfor %}
@@ -631,7 +636,7 @@
                 <h4 class="font-weight-bold mb-4">Platformas</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for plat in todasPlataformas %}
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
+                    <a href="/platform/{{plat.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -639,7 +644,7 @@
                 <h4 class="font-weight-bold mb-4">Generos</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for gend in genders %}
-                    <a href="" class="btn btn-sm btn-outline-secondary m-1">{{gend.nombre}}</a>
+                    <a href="/genre/{{gend.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{gend.nombre}}</a>
                     {% endfor %}
                 </div>
             </div>
