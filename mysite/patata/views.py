@@ -5,10 +5,6 @@ from django.http import HttpResponse
 
 from .models import *
 
-
-def index(request):
- return HttpResponse("Hello, world!")
-
 def home(request):
     vars = {
         'plataformas' : Plataforma.objects.all()[0:4],
@@ -22,7 +18,6 @@ def home(request):
 
 def contact(request):
     return render(request, 'contact.html', {})
-
 
 def games(request):
     output = "<style>*{border: 1px solid black}</style><table>"
