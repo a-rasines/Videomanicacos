@@ -19,8 +19,8 @@ def home(request):
 
 def contact(request):
     vars = {
-        'plataformas' : Plataforma.objects.all(),
-        'generos': Genero.objects.all()
+        'todasPlataformas' : Plataforma.objects.all(),
+        'genders': Genero.objects.all()
     }
     return render(request, 'contact.html', vars)
 
@@ -35,8 +35,8 @@ def games(request):
 
 def game(request, id):
     game = get_object_or_404(Videojuego, id=id)
-    vars = {'genres' : Genero.objects.all(),
-            'platforms': Plataforma.objects.all(),
+    vars = {'todasPlataformas' : Plataforma.objects.all(),
+            'genders': Genero.objects.all(),
             'gamePlatforms': game.plataforma.all(),
             'desc': game.description.split("\n"),
             'game': game,

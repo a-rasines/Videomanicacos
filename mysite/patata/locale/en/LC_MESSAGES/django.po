@@ -84,3 +84,6 @@ msgstr "About the game"
 
 msgid "samegenre"
 msgstr "Same Genre"
+
+msgid "Si tienes alguna duda sobre nuestra pagina web o ves que algo no funciona correctamente, escribenos e intentaremos ayudarte."
+msgstr "If you have any questions about our site or you see something not working properly, let us know and we'll get in touch to try and help you."

@@ -80,3 +80,51 @@ msgstr "Sobre el juego"
 
 msgid "samegenre"
 msgstr "Mismo Género"
+
+msgid "Contact Us For Any Queries"
+msgstr "Contactanos para Cualquier Consulta"
+
+msgid "Get in touch"
+msgstr "Ponte en contacto"
+
+msgid "Our Office"
+msgstr "Nuestras Oficinas"
+
+msgid "Email Us"
+msgstr "Escribenos"
+
+msgid "Call Us"
+msgstr "LLamanos"
+
+msgid "Your Name"
+msgstr "Nombre"
+
+msgid "Your Email"
+msgstr "Dirección de correo electrónico"
+
+msgid "Please enter your name"
+msgstr "Introduzca un nombre válido"
+
+msgid "Please enter your email"
+msgstr "Introduzca una dirección valida"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Please enter a country"
+msgstr "Introduzca un país válido"
+
+msgid "Subject"
+msgstr "Asunto"
+
+msgid "Please enter a subject"
+msgstr "Introduzca un asunto"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Please enter your message"
+msgstr "Introduzca un mensaje"
+
+msgid "Send Message"
+msgstr "Enviar"
