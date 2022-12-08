@@ -5,6 +5,8 @@ from django.http import HttpResponse
 
 from .models import *
 
+
+
 def home(request):
     vars = {
         'plataformas' : Plataforma.objects.all()[0:4],

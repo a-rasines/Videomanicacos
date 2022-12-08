@@ -56,11 +56,11 @@
                             <img class="img-fluid h-100" alt=""  src="{{featured.url_v}}" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-1">
-                                    <a class="text-white" href="/genre/{{featured.genero}}">{% trans featured.genero.nombre %}</a>
+                                    <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
                                     <span class="px-2 text-white">/</span>
                                     <a class="text-white" href="">{{featured.fecha_salida}}</a>
                                 </div>
-                                <a class="h2 m-0 text-white font-weight-bold" href="/game/{{featured.id}}">{{featured.nombre}}</a>
+                                <a class="h2 m-0 text-white font-weight-bold" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
                             </div>
                         </div>
                         {% endfor %}
@@ -74,7 +74,7 @@
                     {% for plataforma in plataformas %}
                     <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                         <img class="img-fluid w-100 h-100" alt="{{plataforma.nombre}}" src={{plataforma.url_p}} style="object-fit: cover;">
-                        <a href="/platform/{{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        <a href="/platform/p={{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                             {{plataforma.nombre}}
                         </a>
                     </div>
@@ -99,11 +99,11 @@
                     <img class="img-fluid w-100 h-100" alt="{{featured.nombre}}" src="{{featured.url_v}}" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-1" style="font-size: 13px;">
-                            <a class="text-white" href="/genre/{{featured.genero}}">{% trans featured.genero.nombre %}</a>
+                            <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
                             <span class="px-1 text-white">/</span>
                             <a class="text-white" href="">{{featured.fecha_salida}}</a>
                         </div>
-                        <a class="h4 m-0 text-white" href="/game/{{featured.id}}">{{featured.nombre}}</a>
+                        <a class="h4 m-0 text-white" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
                     </div>
                 </div>
                 {% endfor %}
@@ -130,11 +130,11 @@
                             <img class="img-fluid w-100" alt="{{juego.nombre}}" src="{{juego.url_v}}" style="object-fit: cover;max-height:250px; overflow:hidden">
                             <div class="overlay position-relative bg-light">
                                 <div class="mb-2" style="font-size: 13px;">
-                                    <a href="/genre/{{juego.genero}}">{% trans juego.genero.nombre %}</a>
+                                    <a href="/genre/g={{juego.genero}}">{% trans juego.genero.nombre %}</a>
                                     <span class="px-1">/</span>
                                     <span>{{juego.fecha_salida}}</span>
                                 </div>
-                                <a class="h4 m-0" href="/game/{{juego.id}}">{{juego.nombre}}</a>
+                                <a class="h4 m-0" href="/game/i={{juego.id}}">{{juego.nombre}}</a>
                             </div>
                         </div>
                         {% endfor %}

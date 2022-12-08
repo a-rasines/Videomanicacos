@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.utils.translation import gettext_lazy
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -82,7 +85,13 @@ DATABASES = {
     }
 }
 
-
+CONTEXT_PROCESSORS = [
+    'django.template.context_processors.i18n'
+]
+LANGUAGES = (
+    ('en', 'English'),
+    ('es', 'Español')
+)
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 

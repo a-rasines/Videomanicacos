@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 {% load i18n %}
 <head>
     <meta charset="utf-8">
@@ -84,7 +84,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{% trans 'genres' %}</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             {%for v in genders%}
-                                <a href="/genre/{{v.nombre}}" class="dropdown-item">{% trans v.nombre %}</a>
+                                <a href="/genre/g={{v.nombre}}" class="dropdown-item">{% trans v.nombre %}</a>
                             {% endfor %}
                         </div>
                     </div>
@@ -92,13 +92,29 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{% trans 'platforms' %}</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             {%for v in todasPlataformas%}
-                                <a href="/platform/{{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
+                                <a href="/platform/p={{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
                             {% endfor %}
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">{% trans 'contact' %}</a>
                 </div>
                 <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" method="post" data-toggle="dropdown">{% trans 'Idioma' %}</a>
+                         <form action="{% url 'set_language' %}" method="post" id="lang_form">{% csrf_token %}
+                            <div id="language-list" class="dropdown-menu rounded-0 m-0">
+                                {% get_current_language as LANGUAGE_CODE %}
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                {% for language in languages %}
+                                <button type="submit" name="language" value="{{ language.code }}" class="dropdown-item{% if language.code == LANGUAGE_CODE %} active{% endif %}">
+                                            {{ language.name_local }}
+                                        </button>
+                                    <!--a href="{% url 'set_language' %}" language-code="{{ language.code }}" class="dropdown-item">{{language.name_local}}</a-->
+                                {% endfor %}
+                            </div>
+                        </form>
+                    </div>
                     <input type="text" class="form-control" placeholder="{% trans 'search...' %}">
                     <div class="input-group-append">
                         <button class="input-group-text text-secondary"><i
@@ -136,7 +152,7 @@
                 <h4 class="font-weight-bold mb-4">{% trans 'platforms' %}</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for plat in todasPlataformas %}
-                    <a href="/platform/{{plat.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
+                    <a href="/platform/p={{plat.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
                     {% endfor %}
                 </div>
             </div>
@@ -144,7 +160,7 @@
                 <h4 class="font-weight-bold mb-4">{% trans 'genres' %}</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for gend in genders %}
-                    <a href="/genre/{{gend.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{% trans gend.nombre %}</a>
+                    <a href="/genre/p={{gend.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{% trans gend.nombre %}</a>
                     {% endfor %}
                 </div>
             </div>
