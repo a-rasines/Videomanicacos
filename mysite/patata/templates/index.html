@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load i18n %}
 <head>
     <meta charset="utf-8">
-    <title>VideoManicacos - Free Videogames News Website</title>
+    <title>VideoManicacos - {% trans 'slogan' %}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -72,34 +73,34 @@
     <div class="container-fluid p-0 mb-3">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
             <a href="" class="navbar-brand d-block d-lg-none">
-                <h2 class="m-0 display-5 text-uppercase"><span class="text-primary">News</span>Room</h2>
+                <h2 class="m-0 display-5 text-uppercase"><span class="text-primary">VIDEO</span>MANICACOS</h2>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/" class="nav-item nav-link active">{% trans 'home' %}</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Generos</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{% trans 'genres' %}</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             {%for v in genders%}
-                                <a href="/genre/{{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
+                                <a href="/genre/{{v.nombre}}" class="dropdown-item">{% trans v.nombre %}</a>
                             {% endfor %}
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plataformas</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{% trans 'platforms' %}</a>
                         <div class="dropdown-menu rounded-0 m-0">
                             {%for v in todasPlataformas%}
                                 <a href="/platform/{{v.nombre}}" class="dropdown-item">{{v.nombre}}</a>
                             {% endfor %}
                         </div>
                     </div>
-                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                    <a href="/contact" class="nav-item nav-link">{% trans 'contact' %}</a>
                 </div>
                 <div class="input-group ml-auto" style="width: 100%; max-width: 300px;">
-                    <input type="text" class="form-control" placeholder="Buscar...">
+                    <input type="text" class="form-control" placeholder="{% trans 'search...' %}">
                     <div class="input-group-append">
                         <button class="input-group-text text-secondary"><i
                                 class="fa fa-search"></i></button>
@@ -163,7 +164,7 @@
                             <img class="img-fluid h-100" alt=""  src="{{featured.url_v}}" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-1">
-                                    <a class="text-white" href="/genre/{{featured.genero}}">{{featured.genero}}</a>
+                                    <a class="text-white" href="/genre/{{featured.genero}}">{% trans featured.genero.nombre %}</a>
                                     <span class="px-2 text-white">/</span>
                                     <a class="text-white" href="">{{featured.fecha_salida}}</a>
                                 </div>
@@ -175,8 +176,8 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">Plataformas</h3>
-                        <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        <h3 class="m-0">{% trans 'platforms' %}</h3>
+                        <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
                     </div>
                     {% for plataforma in plataformas %}
                     <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
@@ -197,8 +198,8 @@
     <div class="container-fluid py-3">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                <h3 class="m-0">Últimos juegos</h3>
-                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                <h3 class="m-0">{% trans 'lastest' %}</h3>
+                <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
             </div>
             <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
                 {% for featured in lastests %}
@@ -206,7 +207,7 @@
                     <img class="img-fluid w-100 h-100" alt="{{featured.nombre}}" src="{{featured.url_v}}" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-1" style="font-size: 13px;">
-                            <a class="text-white" href="/genre/{{featured.genero}}">{{featured.genero}}</a>
+                            <a class="text-white" href="/genre/{{featured.genero}}">{% trans featured.genero.nombre %}</a>
                             <span class="px-1 text-white">/</span>
                             <a class="text-white" href="">{{featured.fecha_salida}}</a>
                         </div>
@@ -229,7 +230,7 @@
             {%endif%}
                 <div class="col-lg-6 py-3">
                     <div class="bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">{{section}}</h3>
+                        <h3 class="m-0">{% trans section.nombre %}</h3>
                     </div>
                     <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
                         {% for juego in games %}
@@ -237,7 +238,7 @@
                             <img class="img-fluid w-100" alt="{{juego.nombre}}" src="{{juego.url_v}}" style="object-fit: cover;max-height:250px; overflow:hidden">
                             <div class="overlay position-relative bg-light">
                                 <div class="mb-2" style="font-size: 13px;">
-                                    <a href="/genre/{{juego.genero}}">{{juego.genero}}</a>
+                                    <a href="/genre/{{juego.genero}}">{% trans juego.genero.nombre %}</a>
                                     <span class="px-1">/</span>
                                     <span>{{juego.fecha_salida}}</span>
                                 </div>
@@ -633,7 +634,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Platformas</h4>
+                <h4 class="font-weight-bold mb-4">{% trans 'platforms' %}</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for plat in todasPlataformas %}
                     <a href="/platform/{{plat.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{plat.nombre}}</a>
@@ -641,31 +642,35 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Generos</h4>
+                <h4 class="font-weight-bold mb-4">{% trans 'genres' %}</h4>
                 <div class="d-flex flex-wrap m-n1">
                     {% for gend in genders %}
-                    <a href="/genre/{{gend.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{{gend.nombre}}</a>
+                    <a href="/genre/{{gend.nombre}}" class="btn btn-sm btn-outline-secondary m-1">{% trans gend.nombre %}</a>
                     {% endfor %}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Enlaces Rápidos</h4>
+                <h4 class="font-weight-bold mb-4">{% trans 'quick links' %}</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
-                    <a class="text-secondary" href="/contact"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>{% trans 'about us' %}</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>{% trans 'advertise' %}</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>{% trans 'p&p' %}</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>{% trans 't&c' %}</a>
+                    <a class="text-secondary" href="/contact"><i class="fa fa-angle-right text-dark mr-2"></i>{% trans 'contact' %}</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid py-4 px-sm-3 px-md-5">
         <p class="m-0 text-center">
-            &copy; <a class="font-weight-bold" href="https://rr.noordstar.me/about-us-e545d096">VIDEOMANICACOS</a>. All Rights Reserved.
+            &copy; <a class="font-weight-bold" href="https://rr.noordstar.me/about-us-e545d096">VIDEOMANICACOS</a>. {% trans 'copyright' %}
 			
 			<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+<<<<<<< Updated upstream
 			Designed by <a class="font-weight-bold" href="https://i.pinimg.com/originals/4e/8f/dc/4e8fdc00c3dadc4d0c70b208d96685fe.jpg">Alberto Rasines, Asier Belloso y David Barrenechea</a>
+=======
+            {% trans 'designedby' %} <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+>>>>>>> Stashed changes
         </p>
     </div>
     <!-- Footer End -->
