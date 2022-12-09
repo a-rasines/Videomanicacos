@@ -1,7 +1,6 @@
 new Vue({
     el: '#vue_controller',
     data: {
-      
       newContacto: {nombre: '', email: '', telefono: '' },
       agenda: [],
       no_contactos: ''
@@ -27,8 +26,9 @@ new Vue({
         
       },
 
-      addContacto: function() {
+      addContacto: function(event) {
         if(this.newContacto.nombre && this.newContacto.email && this.newContacto.telefono) {
+          event.preventDefault();
           this.agenda.push(this.newContacto);
           this.newContacto = { nombre: '', email: '', telefono: '' };
           this.no_contactos = '';

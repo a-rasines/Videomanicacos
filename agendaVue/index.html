@@ -103,9 +103,6 @@
                         <h4 itemprop="telephone">Teléfono</h4>
                     </div>
                 </div>
-                <script>
-
-                </script>
                 <div class="row" v-for="(newContacto, index) in agenda" >
                     <div class="col-xs-4" >
                         <p property="name">{{newContacto.nombre}}</p>
@@ -179,7 +176,7 @@
                             <div id="success"></div>
                             <div class="row">
                                 <div class="form-group col-xs-12">
-                                    <button class="btn btn-success btn-lg" v-on:click="addContacto">Añadir</button>
+                                    <button input="" class="btn btn-success btn-lg" v-on:click="addContacto">Añadir</button>
                                 </div>
                             </div>
                         <!--</form>-->
