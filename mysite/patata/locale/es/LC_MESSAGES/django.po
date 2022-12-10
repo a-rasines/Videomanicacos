@@ -117,6 +117,9 @@ msgstr "Introduzca un país válido"
 msgid "Subject"
 msgstr "Asunto"
 
+msgid "Telephone"
+msgstr "Teléfono"
+
 msgid "Please enter a subject"
 msgstr "Introduzca un asunto"
 

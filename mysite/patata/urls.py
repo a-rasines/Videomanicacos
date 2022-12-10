@@ -6,5 +6,6 @@ urlpatterns = [
  path('contact/', views.contact, name='Contact'),
  path('games/',views.games, name='Juegos'),
  path('genre/g=<str:genero>',views.gender, name='Genero'),
- path('game/i=<int:id>', views.game, name="Game"),
+ path('game/i=<int:id>', views.game, name='Game'),
+ path('registrar/', views.post_form, name='registrar')
 ]

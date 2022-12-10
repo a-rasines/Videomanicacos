@@ -74,6 +74,16 @@ def platform(request, plataforma:str):
     for e in Plataforma.objects.all():
         output += f"<tr><td>{e.nombre}</td><td>{e.owner}</td><td>{e.url_p}</td></tr>"
     return HttpResponse(output + "</table>")'''
+def post_form(request):
+    file = open("consultas.txt", "a") 
+    nombre = request.POST["name"]
+    email = request.POST["email"]
+    country = request.POST["country"]
+    subject = request.POST["subject"]
+    message = request.POST["message"]
+    file.write(f"Nombre: {nombre} -- Email: {email} -- Pais de origen: {country} -- Asunto: {subject} -- Mensaje: '{message}'\n")
+    file.close()
+    return HttpResponse(f"Nombre: {nombre} -- Email: {email} -- Pais de origen: {country} -- Asunto: {subject} -- Mensaje: '{message}'\n")
 
 def eliminarVacios(arr):
     ret = {}
