@@ -1,0 +1,12 @@
+{% extends 'contact.html' %}
+{% load i18n %}
+<body>
+  {% block message %}
+    <div class="alert alert-success" role="alert">
+      {% trans 'Success!' %}
+    </div>
+    <div style="height:100%; display:inline"></div>
+  {%endblock%}
+
+</body>
+</html>

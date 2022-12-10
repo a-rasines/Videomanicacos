@@ -107,7 +107,7 @@
                                 {% get_available_languages as LANGUAGES %}
                                 {% get_language_info_list for LANGUAGES as languages %}
                                 {% for language in languages %}
-                                <button type="submit" name="language" value="{{ language.code }}" class="dropdown-item{% if language.code == LANGUAGE_CODE %} active{% endif %}">
+                                <button type="submit" name="language" value="{{ language.code }}" class="dropdown-item capitalized{% if language.code == LANGUAGE_CODE %} active{% endif %}">
                                             {{ language.name_local }}
                                         </button>
                                     <!--a href="{% url 'set_language' %}" language-code="{{ language.code }}" class="dropdown-item">{{language.name_local}}</a-->

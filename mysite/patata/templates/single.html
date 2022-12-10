@@ -7,8 +7,8 @@
         <div class="container">
             <nav class="breadcrumb bg-transparent m-0 p-0">
                 <a class="breadcrumb-item" href="/">{% trans 'home' %}</a>
-                <a class="breadcrumb-item" href="/platform/{{game.plataforma}}">{{gamePlatforms.0}}</a>
-                <a class="breadcrumb-item" href="/genre/{{game.genero}}">{% trans game.genero.nombre %}</a>
+                <a class="breadcrumb-item" href="/platform/p={{game.plataforma}}">{{gamePlatforms.0}}</a>
+                <a class="breadcrumb-item" href="/genre/g={{game.genero}}">{% trans game.genero.nombre %}</a>
                 <span class="breadcrumb-item active">{{game.nombre}}</span>
             </nav>
         </div>
@@ -26,7 +26,7 @@
                         <img class="img-fluid w-100" src="{{game.url_banner}}" style="object-fit: cover;">
                         <div class="overlay position-relative bg-light">
                             <div class="mb-3">
-                                <a href="/genre/{{game.genero}}">{% trans game.genero.nombre %}</a>
+                                <a href="/genre/g={{game.genero}}">{% trans game.genero.nombre %}</a>
                                 <span class="px-1">/</span>
                                 <span>{{game.fecha_salida}}</span>
                             </div>
@@ -73,7 +73,7 @@
                         {% for plataforma in gamePlatforms %}
                         <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
                             <img class="img-fluid w-100 h-100" alt="{{plataforma.nombre}}" src={{plataforma.url_p}} style="object-fit: cover;">
-                            <a href="/platform/{{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                            <a href="/platform/p={{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
                                 {{plataforma.nombre}}
                             </a>
                         </div>
@@ -177,11 +177,11 @@
                             <img src="{{juego.url_v}}" style="width: 100px; height: 100px; object-fit: cover;">
                             <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
                                 <div class="mb-1" style="font-size: 13px;">
-                                    <a href="/genre/{{juego.genero}}">{% trans juego.genero.nombre %}</a>
+                                    <a href="/genre/g={{juego.genero}}">{% trans juego.genero.nombre %}</a>
                                     <span class="px-1">/</span>
                                     <span>{{juego.fecha_salida}}</span>
                                 </div>
-                                <a class="h6 m-0" href="/game/{{juego.nombre}}">{{juego.nombre}}</a>
+                                <a class="h6 m-0" href="/game/i={{juego.nombre}}">{{juego.nombre}}</a>
                             </div>
                         </div>
                         {%endfor%}

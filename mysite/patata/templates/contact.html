@@ -2,6 +2,8 @@
 {% load i18n %}
 <body>
    {% block content %}
+   {%block message %}
+   {%endblock%}
     <!-- Breadcrumb Start -->
     <div class="container-fluid">
         <div class="container">
@@ -69,8 +71,8 @@
                             </div>
                             <div class="control-group">
                                 <!--<input type="text" class="form-control p-4" id="country" placeholder="{% trans 'Country' %}" required="required" data-validation-required-message="{% trans 'Please enter a country' %}" />-->
-                                <select name="country" class="paises p-4" id="country">
-                                    <option disabled selected>{% trans 'Country' %}</option>
+                                <select name="country" class="paises p-4" id="country" required>
+                                    <option disabled selected value="">{% trans 'Country' %}</option>
                                     <option value="Afganistán">Afganistán</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Alemania">Alemania</option>
@@ -282,7 +284,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton" value="Registrar">{% trans 'Send Message' %}</button>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton" value="{% trans 'Send Message' %}">{% trans 'Send Message' %}</button>
                             </div>
                         </form>
                     </div>

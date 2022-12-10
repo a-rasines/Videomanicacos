@@ -27,6 +27,12 @@ msgstr "Home"
 msgid "genres"
 msgstr "Generos"
 
+msgid "Genre"
+msgstr "Género"
+
+msgid "Platform"
+msgstr "Plataforma"
+
 msgid "platforms"
 msgstr "Plataformas"
 
@@ -131,3 +137,6 @@ msgstr "Introduzca un mensaje"
 
 msgid "Send Message"
 msgstr "Enviar"
+
+msgid "Success!"
+msgstr "Mensaje Enviado"

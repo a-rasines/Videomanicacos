@@ -425,7 +425,10 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2;
 }
-
+.capitalized{
+    text-transform: capitalize;
+}
+}
 @media (max-width: 1200px) {
   .display-1 {
     font-size: calc(1.725rem + 5.7vw) ;
@@ -1890,8 +1893,8 @@ pre code {
 
 .paises{
   display: block;
-  width: 200%;
-  height: calc(1.5em + 0.75rem + 2px);
+  width: 100%;
+  'height: calc(1.5em + 0.75rem + 2px);'
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
