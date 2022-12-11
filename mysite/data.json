@@ -1,712 +1,718 @@
 [
 {
- "model": "patata.genero",
- "pk": 1,
- "fields": {
-  "nombre": "SandBox"
- }
+    "model": "patata.genero",
+    "pk": 1,
+    "fields": {
+        "nombre": "SandBox"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 2,
- "fields": {
-  "nombre": "Shooter"
- }
+    "model": "patata.genero",
+    "pk": 2,
+    "fields": {
+        "nombre": "Shooter"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 3,
- "fields": {
-  "nombre": "RPG"
- }
+    "model": "patata.genero",
+    "pk": 3,
+    "fields": {
+        "nombre": "RPG"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 4,
- "fields": {
-  "nombre": "MMO"
- }
+    "model": "patata.genero",
+    "pk": 4,
+    "fields": {
+        "nombre": "MMO"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 5,
- "fields": {
-  "nombre": "Sport"
- }
+    "model": "patata.genero",
+    "pk": 5,
+    "fields": {
+        "nombre": "Sport"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 6,
- "fields": {
-  "nombre": "Supervivencia"
- }
+    "model": "patata.genero",
+    "pk": 6,
+    "fields": {
+        "nombre": "Supervivencia"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 7,
- "fields": {
-  "nombre": "Aventura"
- }
+    "model": "patata.genero",
+    "pk": 7,
+    "fields": {
+        "nombre": "Aventura"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 8,
- "fields": {
-  "nombre": "Exploracion"
- }
+    "model": "patata.genero",
+    "pk": 8,
+    "fields": {
+        "nombre": "Exploracion"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 10,
- "fields": {
-  "nombre": "Estrategia"
- }
+    "model": "patata.genero",
+    "pk": 10,
+    "fields": {
+        "nombre": "Estrategia"
+    }
 },
 {
- "model": "patata.genero",
- "pk": 11,
- "fields": {
-  "nombre": "Terror"
- }
+    "model": "patata.genero",
+    "pk": 11,
+    "fields": {
+        "nombre": "Terror"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 1,
- "fields": {
-  "nombre": "PlayStation 4",
-  "owner": "Sony Interactive Entertainment",
-  "url_p": "https://us-east-1.linodeobjects.com/gunaxin/2015/01/Banner_PlayStation4_787-560x213.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 1,
+    "fields": {
+        "nombre": "PlayStation 4",
+        "owner": "Sony Interactive Entertainment",
+        "url_p": "https://us-east-1.linodeobjects.com/gunaxin/2015/01/Banner_PlayStation4_787-560x213.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 2,
- "fields": {
-  "nombre": "PlayStation 3",
-  "owner": "Sony Interactive Entertainment",
-  "url_p": "https://cdn.idealo.com/folder/Product/3435/7/3435733/s11_produktbild_gross/sony-playstation-3-ps3-super-slim-12-gb.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 2,
+    "fields": {
+        "nombre": "PlayStation 3",
+        "owner": "Sony Interactive Entertainment",
+        "url_p": "https://cdn.idealo.com/folder/Product/3435/7/3435733/s11_produktbild_gross/sony-playstation-3-ps3-super-slim-12-gb.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 3,
- "fields": {
-  "nombre": "PC",
-  "owner": "Windows",
-  "url_p": "https://centergamingespana.com/wp-content/uploads/2022/10/Como-optimizar-tu-PC-para-gaming.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 3,
+    "fields": {
+        "nombre": "PC",
+        "owner": "Windows",
+        "url_p": "https://centergamingespana.com/wp-content/uploads/2022/10/Como-optimizar-tu-PC-para-gaming.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 4,
- "fields": {
-  "nombre": "Nintendo 3DS",
-  "owner": "Nintendo",
-  "url_p": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_3ds_28/H2x1_generic_3DS_image1280w.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 4,
+    "fields": {
+        "nombre": "Nintendo 3DS",
+        "owner": "Nintendo",
+        "url_p": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_3ds_28/H2x1_generic_3DS_image1280w.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 5,
- "fields": {
-  "nombre": "XBOX 360",
-  "owner": "Microsoft",
-  "url_p": "none"
- }
+    "model": "patata.plataforma",
+    "pk": 5,
+    "fields": {
+        "nombre": "XBOX 360",
+        "owner": "Microsoft",
+        "url_p": "data:image/jpeg;base64,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"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 6,
- "fields": {
-  "nombre": "Switch",
-  "owner": "Nintendo",
-  "url_p": "https://www.supercompdigital.com/imag/marcas/nintendo_banner.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 6,
+    "fields": {
+        "nombre": "Switch",
+        "owner": "Nintendo",
+        "url_p": "https://www.supercompdigital.com/imag/marcas/nintendo_banner.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 7,
- "fields": {
-  "nombre": "XBox One",
-  "owner": "Microsoft",
-  "url_p": "https://areajugones.sport.es/wp-content/uploads/2015/01/xbox-one-banner.jpg"
- }
+    "model": "patata.plataforma",
+    "pk": 7,
+    "fields": {
+        "nombre": "XBox One",
+        "owner": "Microsoft",
+        "url_p": "https://areajugones.sport.es/wp-content/uploads/2015/01/xbox-one-banner.jpg"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 8,
- "fields": {
-  "nombre": "PlayStation 5",
-  "owner": "Sony",
-  "url_p": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21"
- }
+    "model": "patata.plataforma",
+    "pk": 8,
+    "fields": {
+        "nombre": "PlayStation 5",
+        "owner": "Sony",
+        "url_p": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 9,
- "fields": {
-  "nombre": "XBox Series X",
-  "owner": "Microsoft",
-  "url_p": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?ver=8361&q=90&m=6&h=705&w=1253&b=%23FF2F2F2F&f=jpg&o=f&p=140&aim=true"
- }
+    "model": "patata.plataforma",
+    "pk": 9,
+    "fields": {
+        "nombre": "XBox Series X",
+        "owner": "Microsoft",
+        "url_p": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mRni?ver=8361&q=90&m=6&h=705&w=1253&b=%23FF2F2F2F&f=jpg&o=f&p=140&aim=true"
+    }
 },
 {
- "model": "patata.plataforma",
- "pk": 10,
- "fields": {
-  "nombre": "XBox Series S",
-  "owner": "Microsoft",
-  "url_p": "https://compass-ssl.xbox.com/assets/2b/ba/2bbae9c6-b091-49f2-96b3-a8f0fa65eb86.png?n=0202999-ReadyForAction_Console-D.png"
- }
+    "model": "patata.plataforma",
+    "pk": 10,
+    "fields": {
+        "nombre": "XBox Series S",
+        "owner": "Microsoft",
+        "url_p": "https://compass-ssl.xbox.com/assets/2b/ba/2bbae9c6-b091-49f2-96b3-a8f0fa65eb86.png?n=0202999-ReadyForAction_Console-D.png"
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 1,
- "fields": {
-  "nombre": "Minecraft",
-  "fecha_salida": 2013,
-  "pegi": 8,
-  "comanya": "Mojang",
-  "url_v": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Minecraft-xbox-one.jpg",
-  "url_banner": "https://pbs.twimg.com/media/Cv7KydkWAAUps9m?format=jpg&name=large",
-  "featured": false,
-  "description": "¡Explora tu propio mundo único, sobrevive a la noche y crea todo lo que puedas imaginar!",
-  "genero": 1,
-  "plataforma": [
-   1,
-   2,
-   3,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 1,
+    "fields": {
+        "nombre": "Minecraft",
+        "fecha_salida": 2013,
+        "pegi": 8,
+        "comanya": "Mojang",
+        "url_v": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Minecraft-xbox-one.jpg",
+        "url_banner": "https://pbs.twimg.com/media/Cv7KydkWAAUps9m?format=jpg&name=large",
+        "featured": false,
+        "description": "¡Explora tu propio mundo único, sobrevive a la noche y crea todo lo que puedas imaginar!",
+        "genero": 1,
+        "plataforma": [
+            1,
+            2,
+            3,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 2,
- "fields": {
-  "nombre": "Control",
-  "fecha_salida": 2020,
-  "pegi": 12,
-  "comanya": "Remedy",
-  "url_v": "https://imgur.com/BbQNtuZ.png",
-  "url_banner": "",
-  "featured": false,
-  "description": "",
-  "genero": 2,
-  "plataforma": [
-   1,
-   2,
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 2,
+    "fields": {
+        "nombre": "Control",
+        "fecha_salida": 2020,
+        "pegi": 12,
+        "comanya": "Remedy",
+        "url_v": "https://imgur.com/BbQNtuZ.png",
+        "url_banner": "https://i0.wp.com/thegamingoutsider.com/wp-content/uploads/2019/08/Control-key-are.jpeg?fit=1200%2C680&ssl=1",
+        "featured": false,
+        "description": "Una presencia corrupta ha invadido la Agencia Federal de Control... Solo tú puedes detenerla. El mundo es tu arma en esta lucha épica para aniquilar a un enemigo amenazante en entornos profundos e impredecibles. La contención ha fallado, la humanidad está en juego. ¿Retomarás el control?\r\n\r\nControl es un emocionante título de acción y aventuras en tercera persona con gráficos espectaculares que ha ganado más de 80 premios. Gracias a la mezcla de entornos abiertos y la creación de mundos y narrativa características del emblemático desarrollador, Remedy Entertainment, Control presenta una experiencia de juego amplía y muy gratificante.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            2,
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 3,
- "fields": {
-  "nombre": "GTA V",
-  "fecha_salida": 2013,
-  "pegi": 12,
-  "comanya": "Rockstar",
-  "url_v": "https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528",
-  "url_banner": "https://imgur.com/VvvbHm1.png",
-  "featured": false,
-  "description": "Los Santos, una extensa y soleada metrópolis llena de gurús de autoayuda, aspirantes a estrellas y famosos en decadencia. En su día la envidia del mundo occidental, lucha ahora por mantenerse a flote en una era de incertidumbre económica y \"realities\" baratos.\r\n\r\nEn medio de la confusión, tres criminales muy diferentes barajan sus probabilidades de supervivencia y de éxito: Franklin, un estafador callejero en busca de oportunidades de verdad y dinero serio; Michael, profesional ex convicto, cuyo retiro no es tan prometedor como él hubiera esperado; y Trevor, un maníaco violento motivado por la posibilidad de encontrar drogas baratas y el próximo atraco importante. Agotadas las opciones, esta banda lo arriesgará todo en una serie de atrevidos y peligrosos atracos que marcarán sus vidas.\r\n\r\nEl mundo abierto más grande, dinámico y diverso jamás creado. Grand Theft Auto V combina historia y jugabilidad de una nueva forma. Los jugadores entran y salen repetidamente de las vidas de los tres personajes principales, participando en todos los aspectos de la historia entrelazada del juego.\r\n\r\nTodas las clásicas señas de identidad de la rompedora saga regresan, desde la increíble atención al detalle hasta el oscuro sentido del humor de Grand Theft Auto sobre la cultura moderna, junto a un nuevo y ambicioso enfoque del multijugador de mundo abierto.",
-  "genero": 2,
-  "plataforma": [
-   1,
-   2,
-   3,
-   4,
-   5
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 3,
+    "fields": {
+        "nombre": "GTA V",
+        "fecha_salida": 2013,
+        "pegi": 12,
+        "comanya": "Rockstar",
+        "url_v": "https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528",
+        "url_banner": "https://imgur.com/VvvbHm1.png",
+        "featured": false,
+        "description": "Los Santos, una extensa y soleada metrópolis llena de gurús de autoayuda, aspirantes a estrellas y famosos en decadencia. En su día la envidia del mundo occidental, lucha ahora por mantenerse a flote en una era de incertidumbre económica y \"realities\" baratos.\r\n\r\nEn medio de la confusión, tres criminales muy diferentes barajan sus probabilidades de supervivencia y de éxito: Franklin, un estafador callejero en busca de oportunidades de verdad y dinero serio; Michael, profesional ex convicto, cuyo retiro no es tan prometedor como él hubiera esperado; y Trevor, un maníaco violento motivado por la posibilidad de encontrar drogas baratas y el próximo atraco importante. Agotadas las opciones, esta banda lo arriesgará todo en una serie de atrevidos y peligrosos atracos que marcarán sus vidas.\r\n\r\nEl mundo abierto más grande, dinámico y diverso jamás creado. Grand Theft Auto V combina historia y jugabilidad de una nueva forma. Los jugadores entran y salen repetidamente de las vidas de los tres personajes principales, participando en todos los aspectos de la historia entrelazada del juego.\r\n\r\nTodas las clásicas señas de identidad de la rompedora saga regresan, desde la increíble atención al detalle hasta el oscuro sentido del humor de Grand Theft Auto sobre la cultura moderna, junto a un nuevo y ambicioso enfoque del multijugador de mundo abierto.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 4,
- "fields": {
-  "nombre": "Dark Souls II",
-  "fecha_salida": 2012,
-  "pegi": 16,
-  "comanya": "FromSoftware",
-  "url_v": "https://cdn-products.eneba.com/resized-products/et3P3hn_350x200_3x-0.jpg",
-  "url_banner": "https://www.mobygames.com/images/promo/original/1467360825-2838176093.jpg",
-  "featured": false,
-  "description": "Desarrollado por From Software, Dark Souls II es la muy esperada segunda entrega del exigente juego de 2011 Dark Souls. La acción de la vieja escuela que ofrecía este RPG era algo único que cautivó la imaginación de los jugadores de todo el mundo gracias a sus increíbles desafíos e intensas recompensas emocionalesDark Souls II fusiona la famosa dificultad de la franquicia con nuevas y espectaculares innovaciones jugables que potenciarán tanto el juego en solitario como la experiencia multijugador.Únete a este oscuro viaje y experimenta los sobrecogedores encuentros con enemigos, peligros demoniacos y el reto constante que solo FROM SOFTWARE puede ofrecer.",
-  "genero": 3,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 4,
+    "fields": {
+        "nombre": "Dark Souls II",
+        "fecha_salida": 2012,
+        "pegi": 16,
+        "comanya": "FromSoftware",
+        "url_v": "https://cdn-products.eneba.com/resized-products/et3P3hn_350x200_3x-0.jpg",
+        "url_banner": "https://www.mobygames.com/images/promo/original/1467360825-2838176093.jpg",
+        "featured": false,
+        "description": "Desarrollado por From Software, Dark Souls II es la muy esperada segunda entrega del exigente juego de 2011 Dark Souls. La acción de la vieja escuela que ofrecía este RPG era algo único que cautivó la imaginación de los jugadores de todo el mundo gracias a sus increíbles desafíos e intensas recompensas emocionalesDark Souls II fusiona la famosa dificultad de la franquicia con nuevas y espectaculares innovaciones jugables que potenciarán tanto el juego en solitario como la experiencia multijugador.Únete a este oscuro viaje y experimenta los sobrecogedores encuentros con enemigos, peligros demoniacos y el reto constante que solo FROM SOFTWARE puede ofrecer.",
+        "genero": 3,
+        "plataforma": [
+            1,
+            2,
+            3,
+            5,
+            7
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 5,
- "fields": {
-  "nombre": "Sekiro",
-  "fecha_salida": 2017,
-  "pegi": 12,
-  "comanya": "FromSoftware",
-  "url_v": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
-  "url_banner": "https://cdn.videogamesblogger.com/wp-content/uploads/2018/08/Sekiro-Shadows-Die-Twice-Banner.jpg",
-  "featured": false,
-  "description": "Adéntrate en un mundo tan oscuro como despiadado y sumérgete en una nueva experiencia jugable desarrollada por los creadores de Bloodborne y Dark Souls.\r\n\r\nSekiro: Shadows Die Twice es un intenso juego de acción y aventura en tercera persona que tiene lugar en el sangriento Japón del siglo XIV. Ponte en la piel de un guerrero caído en desgracia que ha sido rescatado de los brazos de la muerte y debe salvar a su maestro y vengarse de su archienemigo.\r\n\r\nMientras exploras un enorme mundo interconectado, tendrás que enfrentarte a enemigos colosales y librar extenuantes duelos cara a cara. Emplea las armas prostéticas letales y las poderosas habilidades ninja para acabar con tus rivales, o combina el sigilo con la altura para asesinar a tus enemigos desde las sombras.",
-  "genero": 3,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 5,
+    "fields": {
+        "nombre": "Sekiro",
+        "fecha_salida": 2017,
+        "pegi": 12,
+        "comanya": "FromSoftware",
+        "url_v": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
+        "url_banner": "https://cdn.videogamesblogger.com/wp-content/uploads/2018/08/Sekiro-Shadows-Die-Twice-Banner.jpg",
+        "featured": true,
+        "description": "Adéntrate en un mundo tan oscuro como despiadado y sumérgete en una nueva experiencia jugable desarrollada por los creadores de Bloodborne y Dark Souls.\r\n\r\nSekiro: Shadows Die Twice es un intenso juego de acción y aventura en tercera persona que tiene lugar en el sangriento Japón del siglo XIV. Ponte en la piel de un guerrero caído en desgracia que ha sido rescatado de los brazos de la muerte y debe salvar a su maestro y vengarse de su archienemigo.\r\n\r\nMientras exploras un enorme mundo interconectado, tendrás que enfrentarte a enemigos colosales y librar extenuantes duelos cara a cara. Emplea las armas prostéticas letales y las poderosas habilidades ninja para acabar con tus rivales, o combina el sigilo con la altura para asesinar a tus enemigos desde las sombras.",
+        "genero": 3,
+        "plataforma": [
+            1,
+            3,
+            7
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 6,
- "fields": {
-  "nombre": "League of Legends",
-  "fecha_salida": 1990,
-  "pegi": 8,
-  "comanya": "Rito Juegos",
-  "url_v": "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt02dd32b665c25036/5f4defe8b553152466d1b21a/Homepage_World_1.jpg",
-  "url_banner": "https://images.saymedia-content.com/.image/t_share/MTc0NDMyOTA4ODMwOTA5ODAw/5-easy-to-play-league-of-legends-champs-for-noobs.png",
-  "featured": true,
-  "description": "League of Legends es un juego de arena de batalla multijugador en línea  en el que el jugador controla un personaje con un conjunto de habilidades únicas desde una perspectiva isométrica.​ A julio de 2022 había más de 150 campeones disponibles para jugar.​ En el transcurso de una partida, los campeones ganan niveles al acumular puntos de experiencia al matar enemigos o personajes no jugadores. Los elementos se pueden adquirir para aumentar la fuerza de los campeones, y se compran con oro, que los jugadores acumulan pasivamente con el tiempo y ganan activamente al derrotar a los súbditos,  campeones o estructuras defensivas del equipo contrario.​ En los modos principales de juego los artículos se compran a través de un menú de tienda disponible para los participantes únicamente cuando su campeón está en la base del equipo. Cada partida es única, de modo que los niveles y los elementos comprados no se transfieren de una partida a otra.​",
-  "genero": 4,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 6,
+    "fields": {
+        "nombre": "League of Legends",
+        "fecha_salida": 1990,
+        "pegi": 8,
+        "comanya": "Rito Juegos",
+        "url_v": "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt02dd32b665c25036/5f4defe8b553152466d1b21a/Homepage_World_1.jpg",
+        "url_banner": "https://images.saymedia-content.com/.image/t_share/MTc0NDMyOTA4ODMwOTA5ODAw/5-easy-to-play-league-of-legends-champs-for-noobs.png",
+        "featured": true,
+        "description": "League of Legends es un juego de arena de batalla multijugador en línea  en el que el jugador controla un personaje con un conjunto de habilidades únicas desde una perspectiva isométrica.​ A julio de 2022 había más de 150 campeones disponibles para jugar.​ En el transcurso de una partida, los campeones ganan niveles al acumular puntos de experiencia al matar enemigos o personajes no jugadores. Los elementos se pueden adquirir para aumentar la fuerza de los campeones, y se compran con oro, que los jugadores acumulan pasivamente con el tiempo y ganan activamente al derrotar a los súbditos,  campeones o estructuras defensivas del equipo contrario.​ En los modos principales de juego los artículos se compran a través de un menú de tienda disponible para los participantes únicamente cuando su campeón está en la base del equipo. Cada partida es única, de modo que los niveles y los elementos comprados no se transfieren de una partida a otra.​",
+        "genero": 4,
+        "plataforma": [
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 7,
- "fields": {
-  "nombre": "Legends of Runeterra",
-  "fecha_salida": 1991,
-  "pegi": 8,
-  "comanya": "Rito Juegos",
-  "url_v": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2019/10/legends-runeterra-ficha.jpg?itok=ZKo5lIWj",
-  "url_banner": "https://images.contentstack.io/v3/assets/blta38dcaae86f2ef5c/bltb65884b0afd4e0eb/5f84d825271ecf4a1a643838/LoR_Banner_Tournament.jpg",
-  "featured": false,
-  "description": "En este juego de cartas estratégico, lo que importa es la destreza, no la suerte. Combinad campeones, aliados y regiones de Runaterra para desbloquear sinergias únicas y sorprender a vuestro rival.",
-  "genero": 4,
-  "plataforma": [
-   3,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 7,
+    "fields": {
+        "nombre": "Legends of Runeterra",
+        "fecha_salida": 1991,
+        "pegi": 8,
+        "comanya": "Rito Juegos",
+        "url_v": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2019/10/legends-runeterra-ficha.jpg?itok=ZKo5lIWj",
+        "url_banner": "https://images.contentstack.io/v3/assets/blta38dcaae86f2ef5c/bltb65884b0afd4e0eb/5f84d825271ecf4a1a643838/LoR_Banner_Tournament.jpg",
+        "featured": false,
+        "description": "En este juego de cartas estratégico, lo que importa es la destreza, no la suerte. Combinad campeones, aliados y regiones de Runaterra para desbloquear sinergias únicas y sorprender a vuestro rival.",
+        "genero": 4,
+        "plataforma": [
+            3,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 8,
- "fields": {
-  "nombre": "Half Life",
-  "fecha_salida": 1945,
-  "pegi": 12,
-  "comanya": "Valve",
-  "url_v": "https://imgur.com/Nokponu.png",
-  "url_banner": "https://cdn2.steamgriddb.com/file/sgdb-cdn/hero/97888b75aa1e8aaac3923028d4466fea.png",
-  "featured": false,
-  "description": "Nombrado juego del año por más de 50 publicaciones, la ópera prima de Valve mezcla acción y aventuras con una tecnología galardonada con varios premios, en un mundo terriblemente realista en el que los jugadores deberán esforzarse por sobrevivir. También incluye un emocionante modo multijugador que te permite jugar contra amigos y enemigos de todo el mundo.",
-  "genero": 2,
-  "plataforma": [
-   1,
-   2,
-   4,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 8,
+    "fields": {
+        "nombre": "Half Life",
+        "fecha_salida": 1945,
+        "pegi": 12,
+        "comanya": "Valve",
+        "url_v": "https://imgur.com/Nokponu.png",
+        "url_banner": "https://cdn2.steamgriddb.com/file/sgdb-cdn/hero/97888b75aa1e8aaac3923028d4466fea.png",
+        "featured": false,
+        "description": "Nombrado juego del año por más de 50 publicaciones, la ópera prima de Valve mezcla acción y aventuras con una tecnología galardonada con varios premios, en un mundo terriblemente realista en el que los jugadores deberán esforzarse por sobrevivir. También incluye un emocionante modo multijugador que te permite jugar contra amigos y enemigos de todo el mundo.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            2,
+            4,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 9,
- "fields": {
-  "nombre": "Bioshock",
-  "fecha_salida": 1323,
-  "pegi": 12,
-  "comanya": "2K Games",
-  "url_v": "https://m.media-amazon.com/images/M/MV5BNjBkZmI4NzktZTJmMC00NDNlLTk2M2ItNGEwODUxZGEwNmZiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
-  "url_banner": "https://images.squarespace-cdn.com/content/v1/5355c418e4b0753f93e1fb25/1569979651472-6GKK8HFCV74KV23AVMOM/cover.jpg",
-  "featured": false,
-  "description": "BioShock es un shooter distinto a todos los que has jugado antes, lleno de armas y tácticas nunca vistas. Tendrás un completo arsenal a tu disposición: desde sencillos revólveres a lanzagranadas y lanzadores de productos químicos, pero también estarás obligado a modificar tu ADN para crear un arma mucho más mortífera: tú. Al inyectarte plásmidos conseguirás superpoderes: lanza descargas eléctricas al agua para electrocutar múltiples enemigos, o congélalos en un bloque de hielo para hacerlos pedazos con un golpe de llave inglesa.\r\nNingún encuentro se juega de la misma manera, ni dos jugadores jugarán igual.",
-  "genero": 2,
-  "plataforma": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 9,
+    "fields": {
+        "nombre": "Bioshock",
+        "fecha_salida": 1323,
+        "pegi": 12,
+        "comanya": "2K Games",
+        "url_v": "https://m.media-amazon.com/images/M/MV5BNjBkZmI4NzktZTJmMC00NDNlLTk2M2ItNGEwODUxZGEwNmZiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
+        "url_banner": "https://images.squarespace-cdn.com/content/v1/5355c418e4b0753f93e1fb25/1569979651472-6GKK8HFCV74KV23AVMOM/cover.jpg",
+        "featured": false,
+        "description": "BioShock es un shooter distinto a todos los que has jugado antes, lleno de armas y tácticas nunca vistas. Tendrás un completo arsenal a tu disposición: desde sencillos revólveres a lanzagranadas y lanzadores de productos químicos, pero también estarás obligado a modificar tu ADN para crear un arma mucho más mortífera: tú. Al inyectarte plásmidos conseguirás superpoderes: lanza descargas eléctricas al agua para electrocutar múltiples enemigos, o congélalos en un bloque de hielo para hacerlos pedazos con un golpe de llave inglesa.\r\nNingún encuentro se juega de la misma manera, ni dos jugadores jugarán igual.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 10,
- "fields": {
-  "nombre": "FIFA 21",
-  "fecha_salida": 2024,
-  "pegi": 8,
-  "comanya": "EA",
-  "url_v": "https://m.media-amazon.com/images/I/51EhC85Nq1L._AC_.jpg",
-  "url_banner": "https://i.ytimg.com/vi/oBcMyElT_CU/maxresdefault.jpg",
-  "featured": false,
-  "description": "FIFA 17 es la apuesta por la simulación de fútbol de EA Sports para la temporada 2016-2017. Vuelve toda la emoción de las principales ligas al mundo del videojuego en una entrega que ofrece un mayor grado de personalización, inmersión y competición que otros FIFA. Por supuesto cuenta con numerosas licencias de ligas (30), equipos (650) y estadios, así como equipos femeninos de fútbol.",
-  "genero": 5,
-  "plataforma": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 10,
+    "fields": {
+        "nombre": "FIFA 21",
+        "fecha_salida": 2024,
+        "pegi": 8,
+        "comanya": "EA",
+        "url_v": "https://m.media-amazon.com/images/I/51EhC85Nq1L._AC_.jpg",
+        "url_banner": "https://i.ytimg.com/vi/oBcMyElT_CU/maxresdefault.jpg",
+        "featured": true,
+        "description": "FIFA 17 es la apuesta por la simulación de fútbol de EA Sports para la temporada 2016-2017. Vuelve toda la emoción de las principales ligas al mundo del videojuego en una entrega que ofrece un mayor grado de personalización, inmersión y competición que otros FIFA. Por supuesto cuenta con numerosas licencias de ligas (30), equipos (650) y estadios, así como equipos femeninos de fútbol.",
+        "genero": 5,
+        "plataforma": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 11,
- "fields": {
-  "nombre": "Fallout IV",
-  "fecha_salida": 2002,
-  "pegi": 16,
-  "comanya": "Bethesda",
-  "url_v": "https://m.media-amazon.com/images/I/913m4BOW-NL.jpg",
-  "url_banner": "https://spartanspearhead.com/wp-content/uploads/2015/11/fallout-4-welcome-home-banner.jpg",
-  "featured": false,
-  "description": "Eres el único superviviente del Refugio 111 en un mundo destruido por la guerra nuclear. Cada segundo es una lucha por la supervivencia, y en tus manos estarán todas las decisiones. Solo tú puedes reconstruir el yermo y decidir su futuro. Bienvenido a casa.",
-  "genero": 6,
-  "plataforma": [
-   1,
-   3,
-   5
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 11,
+    "fields": {
+        "nombre": "Fallout IV",
+        "fecha_salida": 2002,
+        "pegi": 16,
+        "comanya": "Bethesda",
+        "url_v": "https://m.media-amazon.com/images/I/913m4BOW-NL.jpg",
+        "url_banner": "https://spartanspearhead.com/wp-content/uploads/2015/11/fallout-4-welcome-home-banner.jpg",
+        "featured": false,
+        "description": "Eres el único superviviente del Refugio 111 en un mundo destruido por la guerra nuclear. Cada segundo es una lucha por la supervivencia, y en tus manos estarán todas las decisiones. Solo tú puedes reconstruir el yermo y decidir su futuro. Bienvenido a casa.",
+        "genero": 6,
+        "plataforma": [
+            1,
+            3,
+            5
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 12,
- "fields": {
-  "nombre": "Pokemon Blanco 2",
-  "fecha_salida": 2004,
-  "pegi": 12,
-  "comanya": "Nintendo",
-  "url_v": "https://imgur.com/R3y4FIE.png",
-  "url_banner": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_ds_22/SI_NDS_PokemonBlackAndWhite2_White_enGB_bannerXS.jpg",
-  "featured": false,
-  "description": "Pokémon Edición Blanca 2 te lleva de nuevo a Teselia, dos años después de los acontecimientos ocurridos en Pokémon Edición Negra y Pokémon Edición Blanca para enfrentarte de nuevo a la amenaza del Equipo Plasma. Esta nueva aventura, disponible para Nintendo DS y Nintendo 3DS, te llevará a muchas nuevas áreas para descubrir y te devolverá a lugares conocidos que habrán cambiado. En Pokémon Edición Blanca 2 podrás atrapar a más de 300 Pokémon, de dentro y fuera de Teselia, como Eevee, Riolu, Tyranitar, Arcanine o Mareep, disponibles desde el principio del juego. El juego incluye Pokémon muy difícil de encontrar, como las nuevas Formas Tótem o los Pokémon legendarios Tornadus, Thundurus y Landorus. Los jugadores encontrarán dos nuevos Pokémon legendarios: Kyurem Negro y Kyurem Blanco. Kyurem Negro solo estará disponible en Pokémon Edición Negra 2, mientras que Kyurem Blanco aparece solo en Pokémon Edición Blanca 2.",
-  "genero": 7,
-  "plataforma": [
-   4,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 12,
+    "fields": {
+        "nombre": "Pokemon Blanco 2",
+        "fecha_salida": 2004,
+        "pegi": 12,
+        "comanya": "Nintendo",
+        "url_v": "https://imgur.com/R3y4FIE.png",
+        "url_banner": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_ds_22/SI_NDS_PokemonBlackAndWhite2_White_enGB_bannerXS.jpg",
+        "featured": false,
+        "description": "Pokémon Edición Blanca 2 te lleva de nuevo a Teselia, dos años después de los acontecimientos ocurridos en Pokémon Edición Negra y Pokémon Edición Blanca para enfrentarte de nuevo a la amenaza del Equipo Plasma. Esta nueva aventura, disponible para Nintendo DS y Nintendo 3DS, te llevará a muchas nuevas áreas para descubrir y te devolverá a lugares conocidos que habrán cambiado. En Pokémon Edición Blanca 2 podrás atrapar a más de 300 Pokémon, de dentro y fuera de Teselia, como Eevee, Riolu, Tyranitar, Arcanine o Mareep, disponibles desde el principio del juego. El juego incluye Pokémon muy difícil de encontrar, como las nuevas Formas Tótem o los Pokémon legendarios Tornadus, Thundurus y Landorus. Los jugadores encontrarán dos nuevos Pokémon legendarios: Kyurem Negro y Kyurem Blanco. Kyurem Negro solo estará disponible en Pokémon Edición Negra 2, mientras que Kyurem Blanco aparece solo en Pokémon Edición Blanca 2.",
+        "genero": 7,
+        "plataforma": [
+            4,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 13,
- "fields": {
-  "nombre": "Satisfactory",
-  "fecha_salida": 2021,
-  "pegi": 8,
-  "comanya": "Coffee Stain",
-  "url_v": "https://steamuserimages-a.akamaihd.net/ugc/927086512541872957/417B0D41D714FB08ACC4641E94C99FB95CFA4A4B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
-  "url_banner": "https://geekflare.com/wp-content/uploads/2021/12/satisfactory-2.png",
-  "featured": true,
-  "description": "Satisfactory es un juego de creación de fábricas de mundo abierto en primera persona con toques de exploración y combate. ¡Juega solo o con tus amigos, explora un planeta alienígena, construye fábricas de varias plantas y descubre un auténtico paraíso de cintas transportadoras!",
-  "genero": 1,
-  "plataforma": [
-   1,
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 13,
+    "fields": {
+        "nombre": "Satisfactory",
+        "fecha_salida": 2021,
+        "pegi": 8,
+        "comanya": "Coffee Stain",
+        "url_v": "https://steamuserimages-a.akamaihd.net/ugc/927086512541872957/417B0D41D714FB08ACC4641E94C99FB95CFA4A4B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+        "url_banner": "https://geekflare.com/wp-content/uploads/2021/12/satisfactory-2.png",
+        "featured": true,
+        "description": "Satisfactory es un juego de creación de fábricas de mundo abierto en primera persona con toques de exploración y combate. ¡Juega solo o con tus amigos, explora un planeta alienígena, construye fábricas de varias plantas y descubre un auténtico paraíso de cintas transportadoras!",
+        "genero": 1,
+        "plataforma": [
+            1,
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 14,
- "fields": {
-  "nombre": "Uncharted IV",
-  "fecha_salida": 2009,
-  "pegi": 12,
-  "comanya": "NaughtyDog",
-  "url_v": "https://m.media-amazon.com/images/I/91grctgwzFL.jpg",
-  "url_banner": "https://i0.wp.com/reliveandplay.com/wp-content/uploads/uncharted-4-banner.jpg",
-  "featured": false,
-  "description": "Tres años después de los hechos acaecidos en UNCHARTED 3: La Traición de Drake, Nathan Drake ha dejado atrás la búsqueda de tesoros. Sin embargo, el destino no tarda en llamar a su puerta cuando su Sam reaparece pidiéndole ayuda para salvar su vida, además de ofrecerle participar en una aventura ante la que Drake no puede resistirse.  \r\n\r\n \r\n\r\nLos dos parten a la caza del tesoro perdido del capitán Henry Avery y en busca de Libertalia, el utópico refugio pirata que se halla en lo más profundo de los bosques de Madagascar. UNCHARTED 4: El Desenlace del Ladrón embarca al jugador en un viaje alrededor del mundo por islas selváticas, grandes ciudades y nevados picos montañosos en busca del tesoro de Avery.",
-  "genero": 7,
-  "plataforma": [
-   1,
-   2,
-   3,
-   5
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 14,
+    "fields": {
+        "nombre": "Uncharted IV",
+        "fecha_salida": 2009,
+        "pegi": 12,
+        "comanya": "NaughtyDog",
+        "url_v": "https://m.media-amazon.com/images/I/91grctgwzFL.jpg",
+        "url_banner": "https://i0.wp.com/reliveandplay.com/wp-content/uploads/uncharted-4-banner.jpg",
+        "featured": false,
+        "description": "Tres años después de los hechos acaecidos en UNCHARTED 3: La Traición de Drake, Nathan Drake ha dejado atrás la búsqueda de tesoros. Sin embargo, el destino no tarda en llamar a su puerta cuando su Sam reaparece pidiéndole ayuda para salvar su vida, además de ofrecerle participar en una aventura ante la que Drake no puede resistirse.  \r\n\r\n \r\n\r\nLos dos parten a la caza del tesoro perdido del capitán Henry Avery y en busca de Libertalia, el utópico refugio pirata que se halla en lo más profundo de los bosques de Madagascar. UNCHARTED 4: El Desenlace del Ladrón embarca al jugador en un viaje alrededor del mundo por islas selváticas, grandes ciudades y nevados picos montañosos en busca del tesoro de Avery.",
+        "genero": 7,
+        "plataforma": [
+            1,
+            2,
+            3,
+            5
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 15,
- "fields": {
-  "nombre": "The Binding of Isaac: Repentance",
-  "fecha_salida": 2000,
-  "pegi": 16,
-  "comanya": "Nicalis",
-  "url_v": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2820/n5HAYQ1mOG7JHnU288faOq9l.png",
-  "url_banner": "https://i.redd.it/njpnvsjp65c61.png",
-  "featured": true,
-  "description": "Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Isaac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanas perdidos, sus miedos y, finalmente, a su madre.\r\nThe Binding of Isaac es un shooter de rol y acción generado aleatoriamente con fuertes elementos de roguelike. Mientras siguen a Isaac en su viaje, los jugadores encontrarán extraños tesoros que cambiarán la forma de Isaac dotándole de habilidades sobrehumanas que le permitirán enfrentarse a hordas de misteriosas criaturas, descubrir secretos y abrirse paso luchando hasta un lugar seguro.",
-  "genero": 2,
-  "plataforma": [
-   1,
-   3,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 15,
+    "fields": {
+        "nombre": "The Binding of Isaac: Repentance",
+        "fecha_salida": 2000,
+        "pegi": 16,
+        "comanya": "Nicalis",
+        "url_v": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2820/n5HAYQ1mOG7JHnU288faOq9l.png",
+        "url_banner": "https://i.redd.it/njpnvsjp65c61.png",
+        "featured": true,
+        "description": "Cuando la madre de Isaac empieza a escuchar la voz de Dios exigiéndole un sacrificio para demostrar su fe, Isaac huye hacia el sótano para enfrentarse a montones de desquiciados enemigos, hermanos y hermanas perdidos, sus miedos y, finalmente, a su madre.\r\nThe Binding of Isaac es un shooter de rol y acción generado aleatoriamente con fuertes elementos de roguelike. Mientras siguen a Isaac en su viaje, los jugadores encontrarán extraños tesoros que cambiarán la forma de Isaac dotándole de habilidades sobrehumanas que le permitirán enfrentarse a hordas de misteriosas criaturas, descubrir secretos y abrirse paso luchando hasta un lugar seguro.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            3,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 16,
- "fields": {
-  "nombre": "Outer Wilds",
-  "fecha_salida": 2011,
-  "pegi": 8,
-  "comanya": "Annapurna Interactive",
-  "url_v": "https://cdn1.epicgames.com/salesEvent/salesEvent/OW_Epic_PortraitStorefront_1200x1600-99dad6c305834ce163cabb944d909304",
-  "url_banner": "https://images.prismic.io/annapurna/3f3f0488-39e1-4ea1-961f-725a39480706_Outer+Wilds_banner.jpg?auto=compress,format&rect=0,0,1920,1080&w=1920&h=1080",
-  "featured": false,
-  "description": "Outer Wilds es un juego de mundo abierto donde el misterio gira en torno a un sistema solar atrapado en un bucle de tiempo.\r\n\r\n¡El programa espacial espera por ti!\r\nEres la nueva incorporación de Outer Wilds Ventures, un programa espacial incipiente que busca respuestas en un sistema solar extraño y en constante evolución.",
-  "genero": 8,
-  "plataforma": [
-   1,
-   2,
-   3,
-   4,
-   5,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 16,
+    "fields": {
+        "nombre": "Outer Wilds",
+        "fecha_salida": 2011,
+        "pegi": 8,
+        "comanya": "Annapurna Interactive",
+        "url_v": "https://cdn1.epicgames.com/salesEvent/salesEvent/OW_Epic_PortraitStorefront_1200x1600-99dad6c305834ce163cabb944d909304",
+        "url_banner": "https://images.prismic.io/annapurna/3f3f0488-39e1-4ea1-961f-725a39480706_Outer+Wilds_banner.jpg?auto=compress,format&rect=0,0,1920,1080&w=1920&h=1080",
+        "featured": false,
+        "description": "Outer Wilds es un juego de mundo abierto donde el misterio gira en torno a un sistema solar atrapado en un bucle de tiempo.\r\n\r\n¡El programa espacial espera por ti!\r\nEres la nueva incorporación de Outer Wilds Ventures, un programa espacial incipiente que busca respuestas en un sistema solar extraño y en constante evolución.",
+        "genero": 8,
+        "plataforma": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 17,
- "fields": {
-  "nombre": "The Last of Us",
-  "fecha_salida": 2011,
-  "pegi": 18,
-  "comanya": "NaughtyDog",
-  "url_v": "https://static.wikia.nocookie.net/thelastofus/images/f/fe/Portada_Parte_I_limpia.jpeg/revision/latest?cb=20211209015400&path-prefix=es",
-  "url_banner": "https://monotema.es/wp-content/uploads/2020/01/the-last-of-us-header.jpg",
-  "featured": false,
-  "description": "Cinco años después de su peligroso viaje por un Estados Unidos postapocalíptico, Ellie y Joel se han asentado en Jackson, Wyoming. La vida en una próspera comunidad de supervivientes les ha permitido disfrutar de paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros supervivientes más desesperados.\r\n\r\nSin embargo, tras un hecho violento que altera esa paz, Ellie se embarca en un viaje implacable en busca de justicia. A medida que va dando caza a los culpables uno a uno, deberá afrontar las devastadoras consecuencias, tanto físicas como emocionales, de sus acciones.",
-  "genero": 6,
-  "plataforma": [
-   1,
-   2,
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 17,
+    "fields": {
+        "nombre": "The Last of Us",
+        "fecha_salida": 2011,
+        "pegi": 18,
+        "comanya": "NaughtyDog",
+        "url_v": "https://static.wikia.nocookie.net/thelastofus/images/f/fe/Portada_Parte_I_limpia.jpeg/revision/latest?cb=20211209015400&path-prefix=es",
+        "url_banner": "https://monotema.es/wp-content/uploads/2020/01/the-last-of-us-header.jpg",
+        "featured": true,
+        "description": "Cinco años después de su peligroso viaje por un Estados Unidos postapocalíptico, Ellie y Joel se han asentado en Jackson, Wyoming. La vida en una próspera comunidad de supervivientes les ha permitido disfrutar de paz y estabilidad, a pesar de la amenaza constante de los infectados y de otros supervivientes más desesperados.\r\n\r\nSin embargo, tras un hecho violento que altera esa paz, Ellie se embarca en un viaje implacable en busca de justicia. A medida que va dando caza a los culpables uno a uno, deberá afrontar las devastadoras consecuencias, tanto físicas como emocionales, de sus acciones.",
+        "genero": 6,
+        "plataforma": [
+            1,
+            2,
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 18,
- "fields": {
-  "nombre": "HALO",
-  "fecha_salida": 2014,
-  "pegi": 16,
-  "comanya": "Bungie Studios",
-  "url_v": "https://static.wikia.nocookie.net/halo/images/3/3e/Halo_infinite_vertical.png/revision/latest?cb=20200722153039&path-prefix=es",
-  "url_banner": "https://content.halocdn.com/media/Default/community/InfiniteCoverArt/twitterheader_halo_infinite_social_1500x500-e94e24bbf45d4937abacdc0500a3d779.png",
-  "featured": false,
-  "description": "La tercera parte del arco del Reclamador nos lleva a explorar el anillo Zeta (Instalación 07) de la mano del Jefe Maestro y su compañero, el desafortunado piloto de un Pelican de la UNSC definido como \"el personaje más humano de la saga\". Por primera vez en su historia, esta nueva ambientación es un mundo abierto —\"varias veces más grande que Halo 4 y 5, combinados— para explorar en solitario o en modo cooperativo con amigos, una característica muy querida que no estaba presente en el anterior episodio. El gancho equipado en la armadura de John-117 debuta para ayudarnos a explorar y a combatir, al igual que un escudo frontal inédito que puede usarse como cobertura.\r\n\r\nLa historia tiene lugar en el año 2560, dos años después de los sucesos acontecidos en H5. Durante este tiempo, el comandante Escharum de los Desterrados lo ha tenido muy fácil para lidiar con una civilización humana debilitada y dispersa; que ahora busca ponerle las cosas difíciles a nuestro protagonista Spartan a medida que descubre las respuestas para preguntas más antiguas.",
-  "genero": 2,
-  "plataforma": [
-   1,
-   4
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 18,
+    "fields": {
+        "nombre": "HALO",
+        "fecha_salida": 2014,
+        "pegi": 16,
+        "comanya": "Bungie Studios",
+        "url_v": "https://static.wikia.nocookie.net/halo/images/3/3e/Halo_infinite_vertical.png/revision/latest?cb=20200722153039&path-prefix=es",
+        "url_banner": "https://content.halocdn.com/media/Default/community/InfiniteCoverArt/twitterheader_halo_infinite_social_1500x500-e94e24bbf45d4937abacdc0500a3d779.png",
+        "featured": false,
+        "description": "La tercera parte del arco del Reclamador nos lleva a explorar el anillo Zeta (Instalación 07) de la mano del Jefe Maestro y su compañero, el desafortunado piloto de un Pelican de la UNSC definido como \"el personaje más humano de la saga\". Por primera vez en su historia, esta nueva ambientación es un mundo abierto —\"varias veces más grande que Halo 4 y 5, combinados— para explorar en solitario o en modo cooperativo con amigos, una característica muy querida que no estaba presente en el anterior episodio. El gancho equipado en la armadura de John-117 debuta para ayudarnos a explorar y a combatir, al igual que un escudo frontal inédito que puede usarse como cobertura.\r\n\r\nLa historia tiene lugar en el año 2560, dos años después de los sucesos acontecidos en H5. Durante este tiempo, el comandante Escharum de los Desterrados lo ha tenido muy fácil para lidiar con una civilización humana debilitada y dispersa; que ahora busca ponerle las cosas difíciles a nuestro protagonista Spartan a medida que descubre las respuestas para preguntas más antiguas.",
+        "genero": 2,
+        "plataforma": [
+            1,
+            4
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 19,
- "fields": {
-  "nombre": "Zelda: Breath of the Wild",
-  "fecha_salida": 2016,
-  "pegi": 8,
-  "comanya": "Nintendo",
-  "url_v": "https://www.normaeditorial.com/upload/media/albumes/0001/07/thumb_6376_albumes_big.jpeg",
-  "url_banner": "https://okdiario.com/guiltybit/wp-content/uploads/2017/03/the-legend-of-zelda-breath-of-the-wild-analisis.jpg",
-  "featured": false,
-  "description": "Producido por Eiji Aonuma, The Legend of Zelda: Breath of the Wild te sumergirá en un mundo de descubrimiento con un impresionante estilo artístico similar a The Wind Waker o Skyward Sword, una cautivadora banda sonora y una intrigante y melancólica historia. Despierta tras un siglo de letargo, adéntrate en el Hyrule más amplio y abierto jamás creado por las tres grandes Diosas y forja tu propio camino con el orden y aventuras que quieras.",
-  "genero": 7,
-  "plataforma": [
-   3,
-   4,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 19,
+    "fields": {
+        "nombre": "Zelda: Breath of the Wild",
+        "fecha_salida": 2016,
+        "pegi": 8,
+        "comanya": "Nintendo",
+        "url_v": "https://www.normaeditorial.com/upload/media/albumes/0001/07/thumb_6376_albumes_big.jpeg",
+        "url_banner": "https://okdiario.com/guiltybit/wp-content/uploads/2017/03/the-legend-of-zelda-breath-of-the-wild-analisis.jpg",
+        "featured": true,
+        "description": "Producido por Eiji Aonuma, The Legend of Zelda: Breath of the Wild te sumergirá en un mundo de descubrimiento con un impresionante estilo artístico similar a The Wind Waker o Skyward Sword, una cautivadora banda sonora y una intrigante y melancólica historia. Despierta tras un siglo de letargo, adéntrate en el Hyrule más amplio y abierto jamás creado por las tres grandes Diosas y forja tu propio camino con el orden y aventuras que quieras.",
+        "genero": 7,
+        "plataforma": [
+            3,
+            4,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 20,
- "fields": {
-  "nombre": "Until Dawn",
-  "fecha_salida": 2018,
-  "pegi": 16,
-  "comanya": "Supermassive Games",
-  "url_v": "https://image.api.playstation.com/vulcan/img/rnd/202010/2318/2cJRHg2UOwbvp10QxGrbX62S.png",
-  "url_banner": "https://images.squarespace-cdn.com/content/v1/59bf1dd8914e6bfb8eab6c63/1506297293223-TB93GJDCVWQ9EU5EJGKV/UD_Banner.jpg?format=2500w",
-  "featured": false,
-  "description": "Terror y decisiones son el alma de Until Dawn, este videojuego exclusivo para PS4 protagonizado por ocho adolescentes atrapados que deben intentar sobrevivir. Until Dawn es un título donde no falta un lugar inhóspito, un grupo de adolescentes y un misterio con grandes dosis de tensión que tanto gustan a los aficionados al terror teenager. Básicamente, Until Dawn es un homenaje de los videojuegos al género slasher y al terror adolescente con grandes valores audiovisuales y que, además, es rejugable porque cada partida puede ser muy distinta de la anterior",
-  "genero": 8,
-  "plataforma": [
-   1,
-   3,
-   4,
-   6
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 20,
+    "fields": {
+        "nombre": "Until Dawn",
+        "fecha_salida": 2018,
+        "pegi": 16,
+        "comanya": "Supermassive Games",
+        "url_v": "https://image.api.playstation.com/vulcan/img/rnd/202010/2318/2cJRHg2UOwbvp10QxGrbX62S.png",
+        "url_banner": "https://images.squarespace-cdn.com/content/v1/59bf1dd8914e6bfb8eab6c63/1506297293223-TB93GJDCVWQ9EU5EJGKV/UD_Banner.jpg?format=2500w",
+        "featured": true,
+        "description": "Terror y decisiones son el alma de Until Dawn, este videojuego exclusivo para PS4 protagonizado por ocho adolescentes atrapados que deben intentar sobrevivir. Until Dawn es un título donde no falta un lugar inhóspito, un grupo de adolescentes y un misterio con grandes dosis de tensión que tanto gustan a los aficionados al terror teenager. Básicamente, Until Dawn es un homenaje de los videojuegos al género slasher y al terror adolescente con grandes valores audiovisuales y que, además, es rejugable porque cada partida puede ser muy distinta de la anterior",
+        "genero": 8,
+        "plataforma": [
+            1,
+            3,
+            4,
+            6
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 21,
- "fields": {
-  "nombre": "NBA 2K21",
-  "fecha_salida": 2021,
-  "pegi": 8,
-  "comanya": "2K Games",
-  "url_v": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0202/f8AI0yEt8NEbvrBceGP7HtHm.png",
-  "url_banner": "https://acf.geeknetic.es/imgw/imagenes/auto/2021/5/20/m5x-image.png?f=webp",
-  "featured": false,
-  "description": "NBA 2K21 es la nueva entrega de la famosa serie de baloncesto superventas NBA 2K. Gracias a las importantes mejoras realizadas en la jugabilidad, los gráficos, las funciones en línea comunitarias y competitivas, y con una gran variedad de modos de juego, NBA 2K21 ofrece una experiencia única llena de baloncesto y cultura de la NBA, demostrando que \"este juego lo es todo\".",
-  "genero": 5,
-  "plataforma": [
-   1,
-   2,
-   3,
-   5
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 21,
+    "fields": {
+        "nombre": "NBA 2K21",
+        "fecha_salida": 2021,
+        "pegi": 8,
+        "comanya": "2K Games",
+        "url_v": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0202/f8AI0yEt8NEbvrBceGP7HtHm.png",
+        "url_banner": "https://acf.geeknetic.es/imgw/imagenes/auto/2021/5/20/m5x-image.png?f=webp",
+        "featured": false,
+        "description": "NBA 2K21 es la nueva entrega de la famosa serie de baloncesto superventas NBA 2K. Gracias a las importantes mejoras realizadas en la jugabilidad, los gráficos, las funciones en línea comunitarias y competitivas, y con una gran variedad de modos de juego, NBA 2K21 ofrece una experiencia única llena de baloncesto y cultura de la NBA, demostrando que \"este juego lo es todo\".",
+        "genero": 5,
+        "plataforma": [
+            1,
+            2,
+            3,
+            5
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 22,
- "fields": {
-  "nombre": "VALORANT",
-  "fecha_salida": 2020,
-  "pegi": 16,
-  "comanya": "Rito Juegos",
-  "url_v": "https://imgur.com/ms25Q1V.png",
-  "url_banner": "https://listelist.com/wp-content/uploads/2022/08/valorant.jpg",
-  "featured": false,
-  "description": "Demostrad vuestro estilo y experiencia en un escenario competitivo internacional. Dispondréis de 13 rondas para atacar y defender vuestro lado mediante un manejo de armas preciso y habilidades tácticas. Y, con una vida por ronda, tendréis que pensar más rápido que vuestros oponentes si queréis sobrevivir. Enfrentaos a vuestros enemigos en los modos competitivo y normal, además de en Combate a muerte y Fiebre de la Spike.",
-  "genero": 2,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 22,
+    "fields": {
+        "nombre": "VALORANT",
+        "fecha_salida": 2020,
+        "pegi": 16,
+        "comanya": "Rito Juegos",
+        "url_v": "https://imgur.com/ms25Q1V.png",
+        "url_banner": "https://listelist.com/wp-content/uploads/2022/08/valorant.jpg",
+        "featured": false,
+        "description": "Demostrad vuestro estilo y experiencia en un escenario competitivo internacional. Dispondréis de 13 rondas para atacar y defender vuestro lado mediante un manejo de armas preciso y habilidades tácticas. Y, con una vida por ronda, tendréis que pensar más rápido que vuestros oponentes si queréis sobrevivir. Enfrentaos a vuestros enemigos en los modos competitivo y normal, además de en Combate a muerte y Fiebre de la Spike.",
+        "genero": 2,
+        "plataforma": [
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 23,
- "fields": {
-  "nombre": "MORDHAU",
-  "fecha_salida": 2019,
-  "pegi": 18,
-  "comanya": "Triternion",
-  "url_v": "https://imgur.com/dko4Cht.png",
-  "url_banner": "https://www.heavybullets.com/wp-content/uploads/2020/01/mordhau-1024x576.jpg",
-  "featured": false,
-  "description": "Mordhau es un videojuego multijugador de hack and slash ambientado en la Edad Media, ​​​ desarrollado por el estudio independiente esloveno Triternion, con un aspecto prominente de juego y personalización competitivo basado en habilidades.",
-  "genero": 3,
-  "plataforma": [
-   1,
-   3,
-   7,
-   8,
-   9,
-   10
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 23,
+    "fields": {
+        "nombre": "MORDHAU",
+        "fecha_salida": 2019,
+        "pegi": 18,
+        "comanya": "Triternion",
+        "url_v": "https://imgur.com/dko4Cht.png",
+        "url_banner": "https://www.heavybullets.com/wp-content/uploads/2020/01/mordhau-1024x576.jpg",
+        "featured": false,
+        "description": "Mordhau es un videojuego multijugador de hack and slash ambientado en la Edad Media, ​​​ desarrollado por el estudio independiente esloveno Triternion, con un aspecto prominente de juego y personalización competitivo basado en habilidades.",
+        "genero": 3,
+        "plataforma": [
+            1,
+            3,
+            7,
+            8,
+            9,
+            10
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 24,
- "fields": {
-  "nombre": "Cities: Skylines",
-  "fecha_salida": 2015,
-  "pegi": 3,
-  "comanya": "Colossal Order",
-  "url_v": "https://lh3.googleusercontent.com/rcvxBoJkxMHLenPCeL4KxyQVr0xzMK2edPnlNlXFIiYyWjdABHEZuaYagM6HdunnzEA6WTBxg4sUt5KzA-HyrBE",
-  "url_banner": "https://xellink.com/wp-content/uploads/2015/05/cities_skylines.jpg",
-  "featured": false,
-  "description": "Cities: Skylines es una versión moderna de la simulación clásica de ciudades. Introduce nuevos elementos que te permiten vivir la emoción y las dificultades de la creación y el mantenimiento de una ciudad real, ampliando al mismo tiempo algunos de los temas ya conocidos de la experiencia de la construcción de ciudades.",
-  "genero": 10,
-  "plataforma": [
-   1,
-   3,
-   6,
-   7
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 24,
+    "fields": {
+        "nombre": "Cities: Skylines",
+        "fecha_salida": 2015,
+        "pegi": 3,
+        "comanya": "Colossal Order",
+        "url_v": "https://lh3.googleusercontent.com/rcvxBoJkxMHLenPCeL4KxyQVr0xzMK2edPnlNlXFIiYyWjdABHEZuaYagM6HdunnzEA6WTBxg4sUt5KzA-HyrBE",
+        "url_banner": "https://xellink.com/wp-content/uploads/2015/05/cities_skylines.jpg",
+        "featured": true,
+        "description": "Cities: Skylines es una versión moderna de la simulación clásica de ciudades. Introduce nuevos elementos que te permiten vivir la emoción y las dificultades de la creación y el mantenimiento de una ciudad real, ampliando al mismo tiempo algunos de los temas ya conocidos de la experiencia de la construcción de ciudades.",
+        "genero": 10,
+        "plataforma": [
+            1,
+            3,
+            6,
+            7
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 25,
- "fields": {
-  "nombre": "Transport Fever 2",
-  "fecha_salida": 2021,
-  "pegi": 3,
-  "comanya": "Urban Games",
-  "url_v": "https://s1.gaming-cdn.com/images/products/5517/orig-fallback-v1/transport-fever-2-pc-juego-steam-cover.jpg?v=1644763363",
-  "url_banner": "https://consolaytablero.com/wp-content/uploads/2019/12/Transport-Fever-2-1.jpg",
-  "featured": false,
-  "description": "El clásico género de simulación de transporte tiene un nuevo estándar de referencia con Transport Fever 2. Descubre un mundo completamente nuevo recorriendo rutas de transporte por tierra, agua y aire. ¡Abre paso al progreso y la prosperidad!",
-  "genero": 10,
-  "plataforma": [
-   1,
-   3,
-   7,
-   8,
-   9,
-   10
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 25,
+    "fields": {
+        "nombre": "Transport Fever 2",
+        "fecha_salida": 2021,
+        "pegi": 3,
+        "comanya": "Urban Games",
+        "url_v": "https://s1.gaming-cdn.com/images/products/5517/orig-fallback-v1/transport-fever-2-pc-juego-steam-cover.jpg?v=1644763363",
+        "url_banner": "https://consolaytablero.com/wp-content/uploads/2019/12/Transport-Fever-2-1.jpg",
+        "featured": true,
+        "description": "El clásico género de simulación de transporte tiene un nuevo estándar de referencia con Transport Fever 2. Descubre un mundo completamente nuevo recorriendo rutas de transporte por tierra, agua y aire. ¡Abre paso al progreso y la prosperidad!",
+        "genero": 10,
+        "plataforma": [
+            1,
+            3,
+            7,
+            8,
+            9,
+            10
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 26,
- "fields": {
-  "nombre": "Phasmophobia",
-  "fecha_salida": 2020,
-  "pegi": 16,
-  "comanya": "Kinetic Games",
-  "url_v": "https://imgur.com/XQglE2Q.png",
-  "url_banner": "https://wallpapercave.com/wp/wp7775348.jpg",
-  "featured": false,
-  "description": "Phasmophobia es un juego cooperativo de 4 usuarios de terror psicológico. La actividad paranormal está en alza y esta en tus manos y las de tu equipo usar e equipamiento caza fantasmas a vuestra disposición para conseguir cuanta mayor cantidad de información posible.",
-  "genero": 11,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 26,
+    "fields": {
+        "nombre": "Phasmophobia",
+        "fecha_salida": 2020,
+        "pegi": 16,
+        "comanya": "Kinetic Games",
+        "url_v": "https://imgur.com/XQglE2Q.png",
+        "url_banner": "https://wallpapercave.com/wp/wp7775348.jpg",
+        "featured": false,
+        "description": "Phasmophobia es un juego cooperativo de 4 usuarios de terror psicológico. La actividad paranormal está en alza y esta en tus manos y las de tu equipo usar e equipamiento caza fantasmas a vuestra disposición para conseguir cuanta mayor cantidad de información posible.",
+        "genero": 11,
+        "plataforma": [
+            3
+        ]
+    }
 },
 {
- "model": "patata.videojuego",
- "pk": 27,
- "fields": {
-  "nombre": "The Mortuary Asistant",
-  "fecha_salida": 2022,
-  "pegi": 18,
-  "comanya": "DarkStone Digital",
-  "url_v": "https://static-cdn.jtvnw.net/ttv-boxart/1945673289_IGDB-272x380.jpg",
-  "url_banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/1295920/capsule_616x353.jpg?t=1663707306",
-  "featured": true,
-  "description": "El funerario ha tenido una emergencia familiar y necesita salir de la oficina en medio del proceso de embalsamamiento. Te ha llamado para preguntarte si puedes entrar y terminar el trabajo por él. Confía en que usted será capaz de manejar el trabajo.\r\n\r\nTodavía nuevo en el depósito de cadáveres y el proceso de embalsamamiento, aceptas a regañadientes. Ha tenido la amabilidad de dejarte una lista de control. Simplemente siga los pasos para completar el embalsamamiento.",
-  "genero": 11,
-  "plataforma": [
-   3
-  ]
- }
+    "model": "patata.videojuego",
+    "pk": 27,
+    "fields": {
+        "nombre": "The Mortuary Asistant",
+        "fecha_salida": 2022,
+        "pegi": 18,
+        "comanya": "DarkStone Digital",
+        "url_v": "https://static-cdn.jtvnw.net/ttv-boxart/1945673289_IGDB-272x380.jpg",
+        "url_banner": "https://cdn.cloudflare.steamstatic.com/steam/apps/1295920/capsule_616x353.jpg?t=1663707306",
+        "featured": true,
+        "description": "El funerario ha tenido una emergencia familiar y necesita salir de la oficina en medio del proceso de embalsamamiento. Te ha llamado para preguntarte si puedes entrar y terminar el trabajo por él. Confía en que usted será capaz de manejar el trabajo.\r\n\r\nTodavía nuevo en el depósito de cadáveres y el proceso de embalsamamiento, aceptas a regañadientes. Ha tenido la amabilidad de dejarte una lista de control. Simplemente siga los pasos para completar el embalsamamiento.",
+        "genero": 11,
+        "plataforma": [
+            3
+        ]
+    }
 }
 ]

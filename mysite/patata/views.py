@@ -57,7 +57,7 @@ class GenreView(BaseView):
             'title1': genero.nombre,
             'g': 1,
             'featureds': Videojuego.objects.filter(featured=True, genero=genero),
-            'lastests': Videojuego.objects.all()[::-1][0:8],
+            'lastests': Videojuego.objects.filter(genero=genero)[::-1][0:8],
             'sections': BaseView.eliminarVacios([(i, Videojuego.objects.filter(genero=genero, plataforma=i)) for i in Plataforma.objects.all()])
         }
         return render(request, 'index.html', vars)
@@ -73,7 +73,7 @@ class PlatformView(BaseView):
             'title1': plataforma.nombre,
             'g':0,
             'featureds': Videojuego.objects.filter(featured=True, plataforma= plataforma),
-            'lastests': Videojuego.objects.all()[::-1][0:8],
+            'lastests': Videojuego.objects.filter(plataforma=plataforma)[::-1][0:8],
             'sections': BaseView.eliminarVacios([(i, Videojuego.objects.filter(genero=i, plataforma = plataforma)) for i in Genero.objects.all()])
         }
         return render(request, 'index.html', vars)

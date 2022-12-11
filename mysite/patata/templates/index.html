@@ -1,413 +1,180 @@
 {% extends 'base.html' %}
 {% load i18n %}
-<body>
+{% block content %}
 
-    {% block content %}
-
-    <!-- Top News Slider Start -->
-    <!--
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="owl-carousel owl-carousel-2 carousel-item-3 position-relative">
-                <div class="d-flex">
-                    {% load static %}
-                    <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
-                    <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
-                        <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                    </div>
+<!-- Top News Slider Start -->
+<!--
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="owl-carousel owl-carousel-2 carousel-item-3 position-relative">
+            <div class="d-flex">
+                {% load static %}
+                <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
                 </div>
-                <div class="d-flex">
-                    {% load static %}
-                    <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
-                    <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
-                        <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                    </div>
-                    </div>
-                <div class="d-flex">
-                    {% load static %}
-                    <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
-                    <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
-                        <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                    </div>
+            </div>
+            <div class="d-flex">
+                {% load static %}
+                <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
                 </div>
-                <div class="d-flex">
-                    {% load static %}
-                    <img src="{% static 'img/news-100x100-4.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
-                    <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
-                        <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                    </div>
+                </div>
+            <div class="d-flex">
+                {% load static %}
+                <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                </div>
+            </div>
+            <div class="d-flex">
+                {% load static %}
+                <img src="{% static 'img/news-100x100-4.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="d-flex align-items-center bg-light px-3" style="height: 80px;">
+                    <a class="text-secondary font-weight-semi-bold" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
                 </div>
             </div>
         </div>
     </div>
-    -->
-    <!-- Top News Slider End -->
-    {% if title0 and title1 %}
-    <div class="container-fluid py-3 container">
-        <h2>{% trans title0 %}: {% trans title1 %}</h2>
-    </div>
-    {% endif %}
-    <!-- Main News Slider Start -->
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
-                        {% for featured in featureds %}
-                        <div class="position-relative overflow-hidden" style="height: 435px;">
-                            {% load static %}
-                            <img class="img-fluid h-100" alt=""  src="{{featured.url_v}}" style="object-fit: cover;">
-                            <div class="overlay">
-                                <div class="mb-1">
-                                    <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
-                                    <span class="px-2 text-white">/</span>
-                                    <a class="text-white" href="">{{featured.fecha_salida}}</a>
-                                </div>
-                                <a class="h2 m-0 text-white font-weight-bold" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
+</div>
+-->
+<!-- Top News Slider End -->
+{% if title0 and title1 %}
+<div class="container-fluid py-3 container">
+    <h2>{% trans title0 %}: {% trans title1 %}</h2>
+</div>
+{% endif %}
+<!-- Main News Slider Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative mb-3 mb-lg-0">
+                    {% for featured in featureds %}
+                    <div class="position-relative overflow-hidden" style="height: 435px;">
+                        {% load static %}
+                        <img class="img-fluid h-100" alt=""  src="{{featured.url_v}}" style="object-fit: cover;">
+                        <div class="overlay">
+                            <div class="mb-1">
+                                <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
+                                <span class="px-2 text-white">/</span>
+                                <a class="text-white" href="">{{featured.fecha_salida}}</a>
                             </div>
+                            <a class="h2 m-0 text-white font-weight-bold" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
                         </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">{% trans 'platforms' %}</h3>
-                        <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
-                    </div>
-                    {% for plataforma in plataformas %}
-                    <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
-                        <img class="img-fluid w-100 h-100" alt="{{plataforma.nombre}}" src={{plataforma.url_p}} style="object-fit: cover;">
-                        <a href="/platform/p={{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
-                            {{plataforma.nombre}}
-                        </a>
                     </div>
                     {% endfor %}
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Main News Slider End -->
-
-
-    <!-- Featured News Slider Start -->
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                <h3 class="m-0">{% trans 'lastest' %}</h3>
-                <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
-            </div>
-            <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
-                {% for featured in lastests %}
-                <div class="position-relative overflow-hidden" style="height: 300px;">
-                    <img class="img-fluid w-100 h-100" alt="{{featured.nombre}}" src="{{featured.url_v}}" style="object-fit: cover;">
-                    <div class="overlay">
-                        <div class="mb-1" style="font-size: 13px;">
-                            <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
-                            <span class="px-1 text-white">/</span>
-                            <a class="text-white" href="">{{featured.fecha_salida}}</a>
-                        </div>
-                        <a class="h4 m-0 text-white" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
-                    </div>
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">{% trans 'platforms' %}</h3>
+                    <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
+                </div>
+                {% for plataforma in plataformas %}
+                <div class="position-relative overflow-hidden mb-3" style="height: 80px;">
+                    <img class="img-fluid w-100 h-100" alt="{{plataforma.nombre}}" src={{plataforma.url_p}} style="object-fit: cover;">
+                    <a href="/platform/p={{plataforma.nombre}}" class="overlay align-items-center justify-content-center h4 m-0 text-white text-decoration-none">
+                        {{plataforma.nombre}}
+                    </a>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
-    <!-- Featured News Slider End -->
+</div>
+<!-- Main News Slider End -->
 
 
-    <!-- Category News Slider Start -->
-    {% for section, games in sections.items %}
-    {%if forloop.counter0|divisibleby:2 %}
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-            {%endif%}
-                <div class="col-lg-6 py-3">
-                    <div class="bg-light py-2 px-4 mb-3">
-                        <h3 class="m-0">{% trans section.nombre %}</h3>
+<!-- Featured News Slider Start -->
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+            <h3 class="m-0">{% trans 'lastest' %}</h3>
+            <a class="text-secondary font-weight-medium text-decoration-none" href="">{% trans 'viewall' %}</a>
+        </div>
+        <div class="owl-carousel owl-carousel-2 carousel-item-4 position-relative">
+            {% for featured in lastests %}
+            <div class="position-relative overflow-hidden" style="height: 300px;">
+                <img class="img-fluid w-100 h-100" alt="{{featured.nombre}}" src="{{featured.url_v}}" style="object-fit: cover;">
+                <div class="overlay">
+                    <div class="mb-1" style="font-size: 13px;">
+                        <a class="text-white" href="/genre/g={{featured.genero}}">{% trans featured.genero.nombre %}</a>
+                        <span class="px-1 text-white">/</span>
+                        <a class="text-white" href="">{{featured.fecha_salida}}</a>
                     </div>
-                    <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
-                        {% for juego in games %}
-                        <div class="position-relative">
-                            <img class="img-fluid w-100" alt="{{juego.nombre}}" src="{{juego.url_v}}" style="object-fit: cover;max-height:250px; overflow:hidden">
-                            <div class="overlay position-relative bg-light">
-                                <div class="mb-2" style="font-size: 13px;">
-                                    <a href="/genre/g={{juego.genero}}">{% trans juego.genero.nombre %}</a>
-                                    <span class="px-1">/</span>
-                                    <span>{{juego.fecha_salida}}</span>
-                                </div>
-                                <a class="h4 m-0" href="/game/i={{juego.id}}">{{juego.nombre}}</a>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
+                    <a class="h4 m-0 text-white" href="/game/i={{featured.id}}">{{featured.nombre}}</a>
                 </div>
-            {% if not forloop.counter0|divisibleby:2 or sections|length == forloop.counter0|add:1%}
             </div>
+            {% endfor %}
         </div>
     </div>
-    {%endif%}
-    {%endfor%}
-    <!-- Category News Slider End -->
+</div>
+<!-- Featured News Slider End -->
 
-    <!-- News With Sidebar Start -->
-<!--
-    <div class="container-fluid py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Popular</h3>
-                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                {% load static %}
-                                <img class="img-fluid w-100" src="{% static 'img/news-500x280-2.jpg' %}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
-                                    <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                {% load static %}
-                                <img class="img-fluid w-100" src="{% static 'img/news-500x280-3.jpg' %}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
-                                    <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-4.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-3 pb-3">
-                        {% load static %}
-                        <a href=""><img class="img-fluid w-100" src="{% static 'img/ads-700x70.jpg' %}" alt=""></a>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
-                                <h3 class="m-0">Latest</h3>
-                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                {% load static %}
-                                <img class="img-fluid w-100" src="{% static 'img/news-500x280-5.jpg' %}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
-                                    <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-5.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mb-3">
-                                {% load static %}
-                                <img class="img-fluid w-100" src="{% static 'img/news-500x280-6.jpg' %}" style="object-fit: cover;">
-                                <div class="overlay position-relative bg-light">
-                                    <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
-                                    <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                            <div class="d-flex mb-3">
-                                {% load static %}
-                                <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">Technology</a>
-                                        <span class="px-1">/</span>
-                                        <span>January 01, 2045</span>
-                                    </div>
-                                    <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+<!-- Category News Slider Start -->
+{% for section, games in sections.items %}
+{%if forloop.counter0|divisibleby:2 %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+        {%endif%}
+            <div class="col-lg-6 py-3">
+                <div class="bg-light py-2 px-4 mb-3">
+                    <h3 class="m-0">{% trans section.nombre %}</h3>
                 </div>
---> 
-<!--
-                <div class="col-lg-4 pt-3 pt-lg-0">
--->
-                    <!-- Social Follow Start -->
-<!--
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Follow Us</h3>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
-                                <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
-                                <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
-                                <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
-                                <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
-                                <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
-                            </a>
-                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
-                                <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
-                            </a>
-                        </div>
-                    </div>
--->
-                    <!-- Social Follow End -->
-
-                    <!-- Newsletter Start -->
-<!--
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Newsletter</h3>
-                        </div>
-                        <div class="bg-light text-center p-4 mb-3">
-                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
-                            <div class="input-group" style="width: 100%;">
-                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary">Sign Up</button>
-                                </div>
+                <div class="owl-carousel owl-carousel-3 carousel-item-2 position-relative">
+                    {% for juego in games %}
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" alt="{{juego.nombre}}" src="{{juego.url_v}}" style="object-fit: cover;max-height:250px; overflow:hidden">
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-2" style="font-size: 13px;">
+                                <a href="/genre/g={{juego.genero}}">{% trans juego.genero.nombre %}</a>
+                                <span class="px-1">/</span>
+                                <span>{{juego.fecha_salida}}</span>
                             </div>
-                            <small>Sit eirmod nonumy kasd eirmod</small>
+                            <a class="h4 m-0" href="/game/i={{juego.id}}">{{juego.nombre}}</a>
                         </div>
                     </div>
--->
-                    <!-- Newsletter End -->
+                    {% endfor %}
+                </div>
+            </div>
+        {% if not forloop.counter0|divisibleby:2 or sections|length == forloop.counter0|add:1%}
+        </div>
+    </div>
+</div>
+{%endif%}
+{%endfor%}
+<!-- Category News Slider End -->
 
-                    <!-- Ads Start -->
+<!-- News With Sidebar Start -->
 <!--
-                    <div class="mb-3 pb-3">
-                        {% load static %}
-                        <a href=""><img class="img-fluid" src="{% static 'img/news-500x280-4.jpg' %}" alt=""></a>
+<div class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Popular</h3>
+                            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        </div>
                     </div>
--->
-                    <!-- Ads End -->
-
-                    <!-- Popular News Start -->
-<!--
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Tranding</h3>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            {% load static %}
+                            <img class="img-fluid w-100" src="{% static 'img/news-500x280-2.jpg' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
+                            </div>
                         </div>
                         <div class="d-flex mb-3">
                             {% load static %}
@@ -431,6 +198,21 @@
                                     <span>January 01, 2045</span>
                                 </div>
                                 <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            {% load static %}
+                            <img class="img-fluid w-100" src="{% static 'img/news-500x280-3.jpg' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
                             </div>
                         </div>
                         <div class="d-flex mb-3">
@@ -457,6 +239,35 @@
                                 <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="mb-3 pb-3">
+                    {% load static %}
+                    <a href=""><img class="img-fluid w-100" src="{% static 'img/ads-700x70.jpg' %}" alt=""></a>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Latest</h3>
+                            <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            {% load static %}
+                            <img class="img-fluid w-100" src="{% static 'img/news-500x280-5.jpg' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
+                            </div>
+                        </div>
                         <div class="d-flex mb-3">
                             {% load static %}
                             <img src="{% static 'img/news-100x100-5.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
@@ -469,43 +280,230 @@
                                 <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
                             </div>
                         </div>
-                    </div>
--->
-                    <!-- Popular News End -->
-
-                    <!-- Tags Start -->
-<!--
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Tags</h3>
-                        </div>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                        <div class="d-flex mb-3">
+                            {% load static %}
+                            <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                            </div>
                         </div>
                     </div>
--->
-                    <!-- Tags End -->
-<!--
+                    <div class="col-lg-6">
+                        <div class="position-relative mb-3">
+                            {% load static %}
+                            <img class="img-fluid w-100" src="{% static 'img/news-500x280-6.jpg' %}" style="object-fit: cover;">
+                            <div class="overlay position-relative bg-light">
+                                <div class="mb-2" style="font-size: 14px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h4" href="">Est stet amet ipsum stet clita rebum duo</a>
+                                <p class="m-0">Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit...</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            {% load static %}
+                            <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            {% load static %}
+                            <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                                <div class="mb-1" style="font-size: 13px;">
+                                    <a href="">Technology</a>
+                                    <span class="px-1">/</span>
+                                    <span>January 01, 2045</span>
+                                </div>
+                                <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+--> 
+<!--
+            <div class="col-lg-4 pt-3 pt-lg-0">
+-->
+                <!-- Social Follow Start -->
+<!--
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Follow Us</h3>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
+                            <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
+                            <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
+                            <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
+                            <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
+                            <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
+                        </a>
+                        <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
+                            <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
+                        </a>
+                    </div>
+                </div>
+-->
+                <!-- Social Follow End -->
+
+                <!-- Newsletter Start -->
+<!--
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Newsletter</h3>
+                    </div>
+                    <div class="bg-light text-center p-4 mb-3">
+                        <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                        <div class="input-group" style="width: 100%;">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </div>
+                        <small>Sit eirmod nonumy kasd eirmod</small>
+                    </div>
+                </div>
+-->
+                <!-- Newsletter End -->
+
+                <!-- Ads Start -->
+<!--
+                <div class="mb-3 pb-3">
+                    {% load static %}
+                    <a href=""><img class="img-fluid" src="{% static 'img/news-500x280-4.jpg' %}" alt=""></a>
+                </div>
+-->
+                <!-- Ads End -->
+
+                <!-- Popular News Start -->
+<!--
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Tranding</h3>
+                    </div>
+                    <div class="d-flex mb-3">
+                        {% load static %}
+                        <img src="{% static 'img/news-100x100-1.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>January 01, 2045</span>
+                            </div>
+                            <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        {% load static %}
+                        <img src="{% static 'img/news-100x100-2.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>January 01, 2045</span>
+                            </div>
+                            <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        {% load static %}
+                        <img src="{% static 'img/news-100x100-3.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>January 01, 2045</span>
+                            </div>
+                            <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        {% load static %}
+                        <img src="{% static 'img/news-100x100-4.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>January 01, 2045</span>
+                            </div>
+                            <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        {% load static %}
+                        <img src="{% static 'img/news-100x100-5.jpg' %}" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
+                            <div class="mb-1" style="font-size: 13px;">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>January 01, 2045</span>
+                            </div>
+                            <a class="h6 m-0" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
+                        </div>
+                    </div>
+                </div>
+-->
+                <!-- Popular News End -->
+
+                <!-- Tags Start -->
+<!--
+                <div class="pb-3">
+                    <div class="bg-light py-2 px-4 mb-3">
+                        <h3 class="m-0">Tags</h3>
+                    </div>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+-->
+                <!-- Tags End -->
+<!--
             </div>
         </div>
     </div>
-    </div>
+</div>
+</div>
 -->
-    <!-- News With Sidebar End -->
+<!-- News With Sidebar End -->
 
-    <div id="aaa">
-        <img alt="" src="data:image/jpeg;base64,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">
-    </div>
-    {% endblock %}
+<div id="aaa">
+    <img alt="" src="data:image/jpeg;base64,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">
+</div>
+{% endblock %}
